@@ -89,6 +89,7 @@ orderController.getOrderList=async(req, res)=>{
 	}
 }
 orderController.getAllUserOrderList=async(req, res)=>{
+	const PAGE_SIZE = 10
 	try{
 		const {page, orderNum} = req.query
 		// const userId =  req.userId  // admin이 검색하는 거라, 누구의 order인지 구별필요없다.

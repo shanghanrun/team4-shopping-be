@@ -269,15 +269,17 @@ productController.getLowStockProducts = async (req, res) => {
 
 productController.cloudDb2Json=async(req, res)=>{
 	try{
-
+		console.log('기능 준비중...')
+		res.status(200).json({message:'기능 준비중...'})
 	}catch(e){
 
 	}
 }
 
-productController.Json2CloudDb=async(req,res)=>{
+productController.json2CloudDb=async(req,res)=>{
 	try{
-
+		console.log('기능 준비중...')
+		res.status(200).json({message:'기능 준비중...'})
 	}catch(e){
 		
 	}
