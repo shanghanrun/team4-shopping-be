@@ -37,6 +37,30 @@ orderController.createOrder = async(req, res)=>{
 		// 프론트엔드에서 getCart()하고, 화면구성할 때 에러가 나올 수 있다. 
 		// cart비우는 것은, 프론트엔드에서 필요할 때 요청하게 만든다.
 
+		//추가로 user에게도 orders에 orderNum을 건네고, purchaseItems에 order-products를 넘긴다.
+		user.orders.push(orderNum);
+		console.log('오더생성하면서 user orders정보 업데이트')
+
+		// Ensure purchasedItems is an object
+		if (!user.purchasedItems || typeof user.purchasedItems !== 'object') {
+		user.purchasedItems = {};
+		}
+		
+		items.forEach(item =>{
+			const productId = item.productId._id;
+			const quantity = item.qty;
+
+			if (user.purchasedItems[productId]){
+				user.purchasedItems[productId] += quantity;
+			} else{
+				user.purchasedItems[productId] = quantity;
+			}
+		})
+		
+		await user.save()
+		console.log('user의 orders, purchasedItems 정보가 업데이트 되었습니다.')
+		
+
 		return res.status(200).json({status:'ok', orderNum: orderNum})
 	}catch(e){
 		return res.status(400).json({status:'fail', error:e.message})
@@ -115,7 +139,6 @@ orderController.getAllUserOrderList=async(req, res)=>{
 
 		const orderList = await query.exec()
 		const totalCount = await Order.find().countDocuments()
-		console.log('totalCount :', totalCount)
 		response.data = orderList
 		response.totalCount = totalCount
 		// console.log('찾은 orderList', orderList)

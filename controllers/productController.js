@@ -7,9 +7,9 @@ const productController={}
 
 productController.createProduct = async(req, res)=>{
 	try{
-		const {sku,name,chosung, image,category,description,stock,price,status,isDeleted} = req.body;
+		const {sku,name, image,category,description,stock,price,status,isDeleted} = req.body;
 
-		const newProduct = new Product({sku, name,chosung, image,category,description,stock,price,status,isDeleted})
+		const newProduct = new Product({sku, name,image,category,description,stock,price,status,isDeleted})
 		await newProduct.save()
 		
 		return res.status(200).json({status:'ok', data:newProduct})
@@ -17,62 +17,6 @@ productController.createProduct = async(req, res)=>{
 		return res.status(400).json({status:'fail', error:e.message})
 	}
 }
-productController.batchCreateProducts = async (req, res) => {
-    console.log('batch시작');
-    try {
-        function convertToValidJSON(input) {   // "쌍따옴표 넣어주기"
-			const corrected = input.replace(/(\w+):/g, '"$1":').replace(/'/g, '"');
-			return corrected;
-		}
-
-        const file = req.file;
-        console.log('백엔드로 받은 excel file :', file);
-        if (!file) {
-            return res.status(400).json({ status: 'fail', error: '파일이 제공되지 않았습니다.' });
-        }
-
-        const workbook = new ExcelJS.Workbook();
-        await workbook.xlsx.readFile(file.path);
-
-        const worksheet = workbook.getWorksheet(1);
-        const createdProducts = [];
-
-        worksheet.eachRow({ includeEmpty: false }, async (row, rowNumber) => {
-            if (rowNumber > 1) { // 첫 번째 행은 헤더로 가정
-                const sku = row.getCell(1).value;
-                const name = row.getCell(2).value;
-                const chosung = row.getCell(3).value;
-                const image = row.getCell(4).value;
-                const description = row.getCell(5).value;
-                const price = parseInt(row.getCell(6).value); 
-                const status = row.getCell(7).value;
-				const categoryRaw = row.getCell(8).value
-				const category = convertToValidJSON(categoryRaw.replace(/[\[\]]/g, '')).split(',').map(item => item.trim());
-                
-
-                let stock;
-                try {
-                    const stockValue = row.getCell(9).value;
-                    const validJSON = convertToValidJSON(stockValue);
-                    stock = JSON.parse(validJSON);
-                } catch (e) {
-                    console.log(`Stock JSON parsing error at row ${rowNumber}: ${stockValue}`);
-                    return; // 이 행을 건너뛰거나 에러 처리
-                }
-
-                const newProduct = new Product({ sku, name, chosung, image, category, description, stock, price });
-                // status 안 넣으면 'active'이다. isDeleted도 안넣어도 된다.
-                await newProduct.save();
-                createdProducts.push(newProduct);
-            }
-        });
-
-        return res.status(200).json({ status: 'ok', data: createdProducts });
-    } catch (e) {
-        return res.status(500).json({ status: 'fail', error: e.message });
-    }
-};
-
 
 productController.getProductList=async(req, res)=>{
 	try{
@@ -136,11 +80,14 @@ productController.getProductById = async(req,res)=>{
 
 productController.updateProduct =async(req,res)=>{
 	try{
+		console.log('## updateProduct 에서 ##')
 		const id = req.params.id
-		const {sku,name,image,category,description,stock,price,status,isDeleted} = req.body;
+		const {sku,name,image,category,description,stock,price,status,isDeleted,salePrice,onePlus, salePercent,freeDelivery} = req.body;
+		console.log('## updateProduct 에서 ##')
+		console.log("salePrice, onePlus, salePercent :", salePrice, onePlus, salePercent)
 		const updatedProduct = await Product.findByIdAndUpdate(
 			{_id:id},
-			{ sku,name,image,category,description,stock,price,status,isDeleted },
+			{ sku,name,image,category,description,stock,price,status,isDeleted,salePrice,onePlus, salePercent,freeDelivery },
 			{ new: true} //새로 업데이트한 데이터를 return해줌 (product값으로 넣어줌)
 		)
 		if(!updatedProduct) throw new Error("item doesn't exist")

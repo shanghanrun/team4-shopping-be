@@ -13,7 +13,11 @@ const userSchema = Schema({
 	image:{type:String, default:''},
 	level:{type:String, default:'customer'}, // customer, admin
 	credit:{type:Number, default:10000}, //가입과 동시에 만원 넣어줌
-	coupon:{type:Number, default:0}
+	coupon:{type:Number, default:0},
+	shipTo:{type:Array, default:[]},
+	totalPurchase:{type:Number, default:0},
+	orders:{type:Array, default:[]},
+	purchasedItems:{type:Object, default:{}}
 },{timestamps:true})
 
 userSchema.methods.toJSON =function(){

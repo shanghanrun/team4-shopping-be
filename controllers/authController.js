@@ -32,7 +32,6 @@ authController.checkAdminPermission=async(req,res,next)=>{
 		const userId = req.userId
 		const user = await User.findById(userId)
 		if(user.level !=='admin') throw new Error('no permission')
-		console.log('admin 검증됨')
 		next()
 	}catch(e){
 		res.status(400).json({status:'fail', error:e.message})
