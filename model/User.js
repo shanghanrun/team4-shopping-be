@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
 const secretKey = process.env.JWT_SECRET_KEY
+const Review = require('./Review')
 
 
 const userSchema = Schema({
@@ -16,8 +17,11 @@ const userSchema = Schema({
 	coupon:{type:Number, default:0},
 	shipTo:{type:Array, default:[]},
 	totalPurchase:{type:Number, default:0},
+	wishList:{type:Array, default:[]},
 	orders:{type:Array, default:[]},
-	purchasedItems:{type:Object, default:{}}
+	purchasedItems:{type:Object, default:{}},
+	viewed:{type:Array, default:[]},
+	review:{type:mongoose.ObjectId, ref:Review}
 },{timestamps:true})
 
 userSchema.methods.toJSON =function(){

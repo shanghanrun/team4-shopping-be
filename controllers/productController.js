@@ -7,9 +7,9 @@ const productController={}
 
 productController.createProduct = async(req, res)=>{
 	try{
-		const {sku,name, image,category,description,stock,price,status,isDeleted} = req.body;
+		const {sku,name, image,category,description,stock,price,status,isDeleted,kind} = req.body;
 
-		const newProduct = new Product({sku, name,image,category,description,stock,price,status,isDeleted})
+		const newProduct = new Product({sku, name,image,category,description,stock,price,status,isDeleted,kind})
 		await newProduct.save()
 		
 		return res.status(200).json({status:'ok', data:newProduct})
@@ -82,12 +82,12 @@ productController.updateProduct =async(req,res)=>{
 	try{
 		console.log('## updateProduct 에서 ##')
 		const id = req.params.id
-		const {sku,name,image,category,description,stock,price,status,isDeleted,salePrice,onePlus, salePercent,freeDelivery} = req.body;
+		const {sku,name,image,kind,category,description,stock,price,status,isDeleted,salePrice,onePlus, salePercent,freeDelivery} = req.body;
 		console.log('## updateProduct 에서 ##')
 		console.log("salePrice, onePlus, salePercent :", salePrice, onePlus, salePercent)
 		const updatedProduct = await Product.findByIdAndUpdate(
 			{_id:id},
-			{ sku,name,image,category,description,stock,price,status,isDeleted,salePrice,onePlus, salePercent,freeDelivery },
+			{ sku,name,image,kind,category,description,stock,price,status,isDeleted,salePrice,onePlus, salePercent,freeDelivery },
 			{ new: true} //새로 업데이트한 데이터를 return해줌 (product값으로 넣어줌)
 		)
 		if(!updatedProduct) throw new Error("item doesn't exist")

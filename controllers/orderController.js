@@ -38,6 +38,8 @@ orderController.createOrder = async(req, res)=>{
 		// cart비우는 것은, 프론트엔드에서 필요할 때 요청하게 만든다.
 
 		//추가로 user에게도 orders에 orderNum을 건네고, purchaseItems에 order-products를 넘긴다.
+		// user.shipTo에 주소를 리스트로 넣는데, 만약 이미 있는 주소라면 넣지 않는다.
+		// user.totalPurchase에 totalPice를 더한다.
 		user.orders.push(orderNum);
 		console.log('오더생성하면서 user orders정보 업데이트')
 
@@ -57,6 +59,30 @@ orderController.createOrder = async(req, res)=>{
 			}
 		})
 		
+		// Ensure shipTo is an array
+		if (!Array.isArray(user.shipTo)) {
+			user.shipTo = [];
+		}
+
+		// const addressList = [...user.shipTo]
+		// if(addressList.length >0){
+		// 	addressList.forEach(address => {
+		// 		if (address !== shipTo){
+		// 			addressList.push(shipTo)
+		// 		}
+		// 	})
+		// } else{
+		// 	addressList.push(shipTo)
+		// }
+		// Check if the address already exists in the array
+		// 아래가 더 좋은 방법이다.
+		if (!user.shipTo.includes(shipTo)) {
+			user.shipTo.push(shipTo);
+		}
+
+		const defaultTotalPurchase = user.totalPurchase
+		user.totalPurchase = defaultTotalPurchase + totalPrice
+
 		await user.save()
 		console.log('user의 orders, purchasedItems 정보가 업데이트 되었습니다.')
 		

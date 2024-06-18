@@ -6,6 +6,7 @@ const productSchema = Schema({
 	image: {type:String,required:true},
 	price: {type:Number, default:0},
 	salePrice: {type:Number, default:0},
+	brand:{type:String, default:''},
 	category:{type:Array, required:true},
 	description:{type:String, default:''},
 	stock:{type: Object, required:true},
@@ -15,6 +16,7 @@ const productSchema = Schema({
 	onePlus:{type:Boolean, default:false},
 	salePercent:{type:Number, default:0},
 	freeDelivery:{type:Boolean, default:false},
+	kind:{type:String, default:'women'},
 },{timestamps:true})
 
 productSchema.methods.toJSON =function(){
