@@ -1,16 +1,18 @@
 const Product = require('../model/Product')
-const ExcelJS = require('exceljs');
-
 
 const PAGE_SIZE =5
 const productController={}
 
 productController.createProduct = async(req, res)=>{
 	try{
-		const {sku,name, image,category,description,stock,price,status,isDeleted,kind} = req.body;
+		const {sku,name, image,category,description,stock,price,status,isDeleted,kind,brand,onePlus,salePercent,salePrice,freeDelivery} = req.body;
 
-		const newProduct = new Product({sku, name,image,category,description,stock,price,status,isDeleted,kind})
+		console.log('salePrice :', salePrice)
+
+		const newProduct = new Product({sku, name,image,category,description,stock,price,status,isDeleted,kind,brand,onePlus,salePercent,salePrice, freeDelivery})
 		await newProduct.save()
+
+		console.log("백엔드 생성 new Product :", newProduct)
 		
 		return res.status(200).json({status:'ok', data:newProduct})
 	}catch(e){
@@ -82,7 +84,7 @@ productController.updateProduct =async(req,res)=>{
 	try{
 		console.log('## updateProduct 에서 ##')
 		const id = req.params.id
-		const {sku,name,image,kind,category,description,stock,price,status,isDeleted,salePrice,onePlus, salePercent,freeDelivery} = req.body;
+		const {sku,name,image,kind,category,brand,description,stock,price,status,isDeleted,salePrice,onePlus, salePercent,freeDelivery} = req.body;
 		console.log('## updateProduct 에서 ##')
 		console.log("salePrice, onePlus, salePercent :", salePrice, onePlus, salePercent)
 		const updatedProduct = await Product.findByIdAndUpdate(

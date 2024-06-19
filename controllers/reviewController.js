@@ -1,6 +1,7 @@
 const Review = require('../model/Review')
 const Product = require('../model/Product')
 const User = require('../model/User')
+const mongoose =require('mongoose')
 
 const reviewController={}
 
@@ -36,7 +37,7 @@ reviewController.createReview=async(req, res)=>{
 }
 reviewController.getAllReviewList=async(req, res)=>{
 	try{
-		const allReviews = await Review.find({isDeleted:false})
+		const allReviews = await Review.find({isDeleted:false}).populate('userId', '_id name email image').populate('productId', '_id name image price')
 		return res.status(200).json({status:'success',data:allReviews})
 	}catch(e){
 		console.error(e); 
@@ -47,9 +48,9 @@ reviewController.getMyReviewList=async(req, res)=>{
 	try{
 		const userId = req.userId
 		const myReviews = await Review.find({
-			userId,
-			{isDeleted:false}
-		})
+				userId, 
+				isDeleted:false
+		}).populate('userId', '_id name email image').populate('productId', '_id name image price')
 		return res.status(200).json({status:'success',data:myReviews})
 	}catch(e){
 		console.error(e); 
@@ -60,9 +61,10 @@ reviewController.getItemReviewList=async(req, res)=>{
 	try{
 		const productId = req.params.id
 		const itemReviews = await Review.find({
-			productId,    // 해당 아이템에 대해 리뷰가 여러개일 수 있다.
-			{isDeleted:false}
-		})
+			    // 해당 아이템에 대해 리뷰가 여러개일 수 있다.
+				productId: mongoose.Types.ObjectId(productId), 
+				isDeleted:false
+		}).populate('userId', '_id name email image').populate('productId', '_id name image price')
 		return res.status(200).json({status:'success',message:''})
 	}catch(e){
 		console.error(e); 

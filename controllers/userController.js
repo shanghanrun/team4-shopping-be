@@ -156,4 +156,32 @@ userController.updateCreditCoupon=async(req,res)=>{
 	}
 }
 
+userController.updateUserViewed=async(req,res)=>{
+	try{
+		const userId = req.userId
+		const {productId} = req.body
+		const user = await User.findById(userId)
+
+		if(!user){
+			return res.status(404).json({ status: 'fail', message: 'User not found' });
+		}
+
+		// Check if the productId is already in the viewedIds array
+		const viewedIds = user.viewedIds;
+		const productIdIndex = viewedIds.indexOf(productId);
+
+		if (productIdIndex === -1) {
+			// 없을 경우 추가
+			viewedIds.push(productId);
+		} 
+
+		user.viewedIds = viewedIds;
+		await user.save();
+
+		return res.status(200).json({ status: 'success', data: user });
+	}catch(e){
+		res.status(400).json({status:'fail', error:e.message})
+	}
+}
+
 module.exports = userController;

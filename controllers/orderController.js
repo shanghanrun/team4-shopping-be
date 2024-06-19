@@ -13,6 +13,9 @@ orderController.createOrder = async(req, res)=>{
 		const userId = req.userId
 		const {shipTo, contact, totalPrice, salePrice,items} = req.body;
 
+		console.log('shipTo, totalPrice', shipTo, totalPrice)
+		console.log('items :', items)
+
 		// 재고확인 & 재고 업데이트
 		const insufficientStockItems = await productController.checkItemsStock(items)
 
@@ -58,6 +61,8 @@ orderController.createOrder = async(req, res)=>{
 				user.purchasedItems[productId] = quantity;
 			}
 		})
+
+		console.log('user purchasedItems :', user.purchasedItems)
 		
 		// Ensure shipTo is an array
 		if (!Array.isArray(user.shipTo)) {
@@ -80,9 +85,12 @@ orderController.createOrder = async(req, res)=>{
 			user.shipTo.push(shipTo);
 		}
 
+		console.log('user shipTo :', user.shipTo)
+
 		const defaultTotalPurchase = user.totalPurchase
 		user.totalPurchase = defaultTotalPurchase + totalPrice
 
+		console.log('user totalPurchase :', user.totalPurchase)
 		await user.save()
 		console.log('user의 orders, purchasedItems 정보가 업데이트 되었습니다.')
 		
@@ -99,7 +107,7 @@ orderController.getOrderList=async(req, res)=>{
 	try{
 		const {page, orderNum} = req.query
 		const userId =  req.userId
-		console.log('다음 유저의 orderList검색: ', userId)
+		// console.log('다음 유저의 orderList검색: ', userId)
 
 		let cond ={isDeleted:false}  // condition 객체, 삭제 안된 order들
 		if (userId.level !== 'admin'){
@@ -143,7 +151,7 @@ orderController.getAllUserOrderList=async(req, res)=>{
 	try{
 		const {page, orderNum} = req.query
 		// const userId =  req.userId  // admin이 검색하는 거라, 누구의 order인지 구별필요없다.
-		console.log('다음 orderNum 검색: ', orderNum)
+		// console.log('다음 orderNum 검색: ', orderNum)
 
 		let cond ={isDeleted:false}  // condition 객체
 		// if (userId.level !== 'admin'){

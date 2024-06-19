@@ -16,7 +16,7 @@ const productSchema = Schema({
 	onePlus:{type:Boolean, default:false},
 	salePercent:{type:Number, default:0},
 	freeDelivery:{type:Boolean, default:false},
-	kind:{type:String, default:'women'},
+	kind:{type:String, default:'women'}
 },{timestamps:true})
 
 productSchema.methods.toJSON =function(){

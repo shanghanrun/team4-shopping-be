@@ -4,7 +4,7 @@ const User = require('./User')
 const Product = require('./Product')
 
 const reviewSchema = Schema({
-	userId:{type:mongoose.ObjectId, ref: User},
+	userId:{type:mongoose.ObjectId, ref: 'User'},
 	productId:{type:mongoose.ObjectId, ref:Product},
 	title: {type:String, required:true},
 	image: {type:String},
