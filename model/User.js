@@ -21,7 +21,7 @@ const userSchema = Schema({
 	orders:{type:Array, default:[]},
 	purchasedItems:{type:Object, default:{}},
 	viewed:{type:Array, default:[]},
-	review:{type:mongoose.ObjectId, ref:Review}
+	reviewIds:{type:Array, default:[]}
 },{timestamps:true})
 
 userSchema.methods.toJSON =function(){
