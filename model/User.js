@@ -20,7 +20,7 @@ const userSchema = Schema({
 	wishList:{type:Array, default:[]},
 	orders:{type:Array, default:[]},
 	purchasedItems:{type:Array, default:{}},
-	viewed:{type:Array, default:[]},
+	viewedIds:{type:Array, default:[]},// 살핀 productId 들
 	reviewIds:{type:Array, default:[]}
 },{timestamps:true})
 

@@ -15,11 +15,11 @@ productRouter.get('/low-stock-products', productController.getLowStockProducts)
 productRouter.get('/cloudDb-to-json', productController.cloudDb2Json)
 productRouter.get('/json-to-cloudDb', productController.json2CloudDb)
 
-
 productRouter.get('/:id', productController.getProductById)
 productRouter.delete('/:id', authController.authenticate, authController.checkAdminPermission, productController.deleteProduct)
 productRouter.put('/:id', authController.authenticate, authController.checkAdminPermission, productController.updateProduct)
 
+productRouter.post('/viewed', authController.authenticate, productController.getViewedList)
 
 
 

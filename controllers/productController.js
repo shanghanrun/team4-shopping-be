@@ -1,4 +1,5 @@
 const Product = require('../model/Product')
+const mongoose = require('mongoose'); 
 
 const PAGE_SIZE =5
 const productController={}
@@ -231,6 +232,32 @@ productController.json2CloudDb=async(req,res)=>{
 		res.status(200).json({message:'기능 준비중...'})
 	}catch(e){
 		
+	}
+}
+
+productController.getViewedList=async(req,res)=>{
+	try{
+		const userId = req.userId
+		const {viewedIds} = req.body; //productId 들
+		let foundProductList =[]
+		
+		for (const productId of viewedIds) {
+			const objectId = new mongoose.Types.ObjectId(productId); // 문자열을 ObjectId로 변환
+			const foundProduct = await Product.findById(objectId);
+			foundProductList.push(foundProduct);
+		}
+
+		// 혹은 map과 Promise.all을 사용하는 것도 좋다.
+		// map을 사용하여 비동기 작업을 병렬로 실행
+		// const foundProductList = await Promise.all(viewedIds.map(async (productId) => {
+		// const objectId = mongoose.Types.ObjectId(productId); // 문자열을 ObjectId로 변환
+		// const foundProduct = await Product.findById(objectId);
+		// return foundProduct;
+		// }));
+		
+		res.status(200).json({status:'ok', data:foundProductList})
+	}catch(e){
+		res.status(400).json({ status: 'fail', error: e.message });
 	}
 }
 
