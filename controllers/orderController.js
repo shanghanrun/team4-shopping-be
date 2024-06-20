@@ -13,8 +13,7 @@ orderController.createOrder = async(req, res)=>{
 		const userId = req.userId
 		const {shipTo, contact, totalPrice, salePrice,items} = req.body;
 
-		console.log('shipTo, totalPrice', shipTo, totalPrice)
-		console.log('items :', items)
+		console.log('shipTo', shipTo)
 
 		// 재고확인 & 재고 업데이트
 		const insufficientStockItems = await productController.checkItemsStock(items)
@@ -34,7 +33,6 @@ orderController.createOrder = async(req, res)=>{
 			orderNum: orderNum,
 		})
 		await newOrder.save()
-		console.log('Order 생성됨')
 		//save후에 cart를 비워준다. 그런데 cart는 바로 비울 필요가 없다.
 		//await cartController.emptyCart() 해서 바로 카트를 비우면 
 		// 프론트엔드에서 getCart()하고, 화면구성할 때 에러가 나올 수 있다. 
@@ -44,54 +42,66 @@ orderController.createOrder = async(req, res)=>{
 		// user.shipTo에 주소를 리스트로 넣는데, 만약 이미 있는 주소라면 넣지 않는다.
 		// user.totalPurchase에 totalPice를 더한다.
 		user.orders.push(orderNum);
-		console.log('오더생성하면서 user orders정보 업데이트')
+		// console.log('오더생성하면서 user orders정보 업데이트')
 
-		// Ensure purchasedItems is an object
-		if (!user.purchasedItems || typeof user.purchasedItems !== 'object') {
-		user.purchasedItems = {};
+		console.log('기존 user의 purchasedItems :', user.purchasedItems)
+		if (!Array.isArray(user.purchasedItems)) {
+			user.purchasedItems = [];
 		}
-		
-		items.forEach(item =>{
-			const productId = item.productId._id;
+				
+		items.forEach(item => {
+			const productId = item.productId.toString();
+			console.log('구매한 productId', productId);
 			const quantity = item.qty;
 
-			if (user.purchasedItems[productId]){
-				user.purchasedItems[productId] += quantity;
-			} else{
-				user.purchasedItems[productId] = quantity;
-			}
-		})
+			let productExists = false;
 
-		console.log('user purchasedItems :', user.purchasedItems)
+			user.purchasedItems.forEach(purchasedItem => {
+				if (purchasedItem[productId]) {
+				purchasedItem[productId] += quantity;
+				productExists = true;
+				}
+			});
+
+			if (!productExists) {
+				user.purchasedItems.push({ [productId]: quantity });
+			}
+		});
+
+		console.log('user purchasedItems :', user.purchasedItems) // 여기까지 잘 되었다.
 		
+		await user.save() //일단 저장
+	
 		// Ensure shipTo is an array
 		if (!Array.isArray(user.shipTo)) {
 			user.shipTo = [];
 		}
 
-		// const addressList = [...user.shipTo]
-		// if(addressList.length >0){
-		// 	addressList.forEach(address => {
-		// 		if (address !== shipTo){
-		// 			addressList.push(shipTo)
-		// 		}
-		// 	})
-		// } else{
-		// 	addressList.push(shipTo)
-		// }
-		// Check if the address already exists in the array
-		// 아래가 더 좋은 방법이다.
-		if (!user.shipTo.includes(shipTo)) {
-			user.shipTo.push(shipTo);
+		const normalizedShipTo = {
+			...shipTo,
+			address2: shipTo.address2 || ''
+		}; //undefined가 아닌 빈문자열이 되게
+		console.log('normalizedShipTo :', normalizedShipTo)
+		console.log('user.shipTo :', user.shipTo)
+
+		const addressExists = user.shipTo.some(existingShipTo => existingShipTo.address === shipTo.address && (existingShipTo.address2 || '') === normalizedShipTo.address2);
+		
+		console.log('addressExists? :', addressExists)
+
+		if(!addressExists){
+			user.shipTo.push(normalizedShipTo);
+			console.log('user.shipTo에 추가한 결과:', user.shipTo)
 		}
 
-		console.log('user shipTo :', user.shipTo)
+		console.log('user shipTo 최종결과 :', user.shipTo)
 
 		const defaultTotalPurchase = user.totalPurchase
 		user.totalPurchase = defaultTotalPurchase + totalPrice
 
-		console.log('user totalPurchase :', user.totalPurchase)
+		// console.log('user totalPurchase :', user.totalPurchase)
+
 		await user.save()
+		console.log('최종 user 내용:',user)
 		console.log('user의 orders, purchasedItems 정보가 업데이트 되었습니다.')
 		
 

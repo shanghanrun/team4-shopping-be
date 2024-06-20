@@ -19,7 +19,7 @@ const userSchema = Schema({
 	totalPurchase:{type:Number, default:0},
 	wishList:{type:Array, default:[]},
 	orders:{type:Array, default:[]},
-	purchasedItems:{type:Object, default:{}},
+	purchasedItems:{type:Array, default:{}},
 	viewed:{type:Array, default:[]},
 	reviewIds:{type:Array, default:[]}
 },{timestamps:true})

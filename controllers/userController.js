@@ -53,7 +53,7 @@ userController.loginWithEmail= async(req, res)=>{
 			// 가입한 상태가 아니라는 메시지, 로그인페이지로 리디렉션
 			throw new Error('가입한 상태가 아닙니다. email을 다시 확인해 주세요')
 		} else{
-			console.log('secretKey:', secretKey)
+			// console.log('secretKey:', secretKey)
 			const isMatch = bcrypt.compareSync(password, user.password);  //user.password는 암호화된 것
 			if(!isMatch){
 				throw new Error('패스워드가 일치하지 않습니다.')
