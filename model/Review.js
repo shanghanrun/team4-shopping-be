@@ -4,13 +4,19 @@ const User = require('./User')
 const Product = require('./Product')
 
 const reviewSchema = Schema({
-	userId:{type:mongoose.ObjectId, ref: 'User'},
+	authorId:{type:mongoose.ObjectId, ref: 'User'},
+	author:{type:String,required:true,},
 	productId:{type:mongoose.ObjectId, ref:Product},
 	title: {type:String, required:true},
 	image: {type:String},
 	content: {type:String, default:""},
 	star: {type:Number, default:0},
-	isDeleted:{type:Boolean, default:false}
+	isDeleted:{type:Boolean, default:false},
+	replyIds:[
+			{ type:mongoose.ObjectId,
+				ref:"Reply"
+			}
+	]
 },{timestamps:true})
 
 reviewSchema.methods.toJSON =function(){

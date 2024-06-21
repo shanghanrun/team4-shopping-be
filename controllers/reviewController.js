@@ -15,9 +15,10 @@ reviewController.createReview=async(req, res)=>{
         if (!title || !content || star == null) {
             return res.status(400).json({ status: 'fail', message: 'Title, content, and star rating are required.' });
         }
-
+		const foundUser = await User.findById(userId)
+		const foundUsername =foundUser.name
 		const review = new Review({
-			userId, productId, title,image,content,star
+			authorId:userId, author:foundUsername, productId, title,image,content,star
 		})
 		await review.save()
 		
@@ -37,7 +38,7 @@ reviewController.createReview=async(req, res)=>{
 }
 reviewController.getAllReviewList=async(req, res)=>{
 	try{
-		const allReviews = await Review.find({isDeleted:false}).populate('userId', '_id name email image').populate('productId', '_id name image price')
+		const allReviews = await Review.find({isDeleted:false}).populate('authorId', '_id name email image').populate('productId', '_id name image price')
 		return res.status(200).json({status:'success',data:allReviews})
 	}catch(e){
 		console.error(e); 
@@ -50,7 +51,7 @@ reviewController.getMyReviewList=async(req, res)=>{
 		const myReviews = await Review.find({
 				userId, 
 				isDeleted:false
-		}).populate('userId', '_id name email image').populate('productId', '_id name image price')
+		}).populate('authorId', '_id name email image').populate('productId', '_id name image price')
 		return res.status(200).json({status:'success',data:myReviews})
 	}catch(e){
 		console.error(e); 
@@ -64,7 +65,7 @@ reviewController.getItemReviewList=async(req, res)=>{
 			    // 해당 아이템에 대해 리뷰가 여러개일 수 있다.
 				productId: mongoose.Types.ObjectId(productId), 
 				isDeleted:false
-		}).populate('userId', '_id name email image').populate('productId', '_id name image price')
+		}).populate('authorId', '_id name email image').populate('productId', '_id name image price')
 		return res.status(200).json({status:'success',message:''})
 	}catch(e){
 		console.error(e); 

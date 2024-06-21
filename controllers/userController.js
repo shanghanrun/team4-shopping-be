@@ -1,5 +1,6 @@
 const userController={}
 const User = require('../model/User')
+const Product = require('../model/Product')
 const bcrypt = require('bcryptjs')
 const saltRounds =10
 const {OAuth2Client} = require('google-auth-library')
@@ -7,6 +8,7 @@ const jwt = require('jsonwebtoken')
 require('dotenv').config()
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
 const secretKey = process.env.JWT_SECRET_KEY
+const mongoose = require('mongoose'); 
 
 userController.createUser=async(req, res)=>{
 	try{
@@ -181,6 +183,32 @@ userController.updateUserViewed=async(req,res)=>{
 		await user.save();
 
 		return res.status(200).json({ status: 'success', data: user });
+	}catch(e){
+		res.status(400).json({status:'fail', error:e.message})
+	}
+}
+userController.deleteUserViewed=async(req,res)=>{
+	try{
+		const userId = req.userId
+		const productId = req.params.id
+		const user = await User.findById(userId)
+		const filteredList = user.viewedIds.filter((viewedId)=> viewedId !== productId)
+		user.viewedIds = filteredList
+		await user.save()
+
+		//filteredList를 바탕으로 해당 product들 찾기
+		const productList = await Promise.all(filteredList.map(async(itemId)=>{
+			const productId = new mongoose.Types.ObjectId(itemId)
+			const product = await Product.findById(productId)
+			return product;
+		}))
+
+		console.log('user.viewedIds :', user.viewedIds)
+		console.log('delete로 filter된 리스트:', filteredList)
+		console.log('productList :', productList)
+
+
+		res.status(200).json({status:'ok', data:productList})
 	}catch(e){
 		res.status(400).json({status:'fail', error:e.message})
 	}

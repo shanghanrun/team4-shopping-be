@@ -16,6 +16,7 @@ userRouter.get('/verify-token', authController.verifyToken)
 userRouter.put('/', authController.authenticate, authController.checkAdminPermission, userController.updateUser)
 
 userRouter.put('/viewed', authController.authenticate,userController.updateUserViewed)
+userRouter.delete('/viewed/:id', authController.authenticate,userController.deleteUserViewed)
 
 
 module.exports = userRouter;
