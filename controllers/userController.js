@@ -160,7 +160,7 @@ userController.updateCreditCoupon=async(req,res)=>{
 
 userController.updateUserViewed=async(req,res)=>{
 	try{
-		console.log('userViewed 시작')
+		// console.log('userViewed 시작')
 		const userId = req.userId
 		const {productId} = req.body
 		const user = await User.findById(userId)
@@ -179,7 +179,7 @@ userController.updateUserViewed=async(req,res)=>{
 		} 
 
 		user.viewedIds = viewedIds;
-		console.log('userViewedIds', user.viewedIds)
+		// console.log('userViewedIds', user.viewedIds)
 		await user.save();
 
 		return res.status(200).json({ status: 'success', data: user });

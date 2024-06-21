@@ -8,29 +8,32 @@ const reviewController={}
 
 reviewController.createReview=async(req, res)=>{
 	try{
-		const userId = req.userId
-		const {productId, title,image,content,star} = req.body;
+		const {author, authorId, productId, title,image,content,star} = req.body;
+		console.log('받은 author', author)
+		console.log('받은 authorId', authorId)
+		console.log('받은 title', title)
 
 		// Validation
         if (!title || !content || star == null) {
-            return res.status(400).json({ status: 'fail', message: 'Title, content, and star rating are required.' });
+            return res.status(400).json({ status: 'fail', message: 'title, content, and star are required.' });
         }
-		const foundUser = await User.findById(userId)
-		const foundUsername =foundUser.name
+		
 		const review = new Review({
-			authorId:userId, author:foundUsername, productId, title,image,content,star
+			authorId, author, productId, title,image,content,star
 		})
 		await review.save()
 		
+		console.log('작성된 review:', review)
 		// user에게도 해당 리뷰id를, 리뷰ids 목록에 추가
-		const user = await User.findById(userId)
+		const user = await User.findById(authorId)
 		if (!user) {
             return res.status(404).json({ status: 'fail', message: 'User not found.' });
         }
 		user.reviewIds.push(review._id)
 		await user.save()
+		console.log('user.reviewedIds에 review._id 추가함')
 
-		return res.status(200).json({status:'success',message:'리뷰가 잘 작성되었습니다.'})
+		return res.status(200).json({status:'success',data: review})
 	}catch(e){
 		console.error(e); 
 		return res.status(400).json({status:'fail', error:e.message})
@@ -60,13 +63,16 @@ reviewController.getMyReviewList=async(req, res)=>{
 }
 reviewController.getItemReviewList=async(req, res)=>{
 	try{
+		console.log('getItemReviewList 시작')
 		const productId = req.params.id
 		const itemReviews = await Review.find({
 			    // 해당 아이템에 대해 리뷰가 여러개일 수 있다.
-				productId: mongoose.Types.ObjectId(productId), 
-				isDeleted:false
+				productId: new mongoose.Types.ObjectId(productId), 
+				// isDeleted:false
 		}).populate('authorId', '_id name email image').populate('productId', '_id name image price')
-		return res.status(200).json({status:'success',message:''})
+
+		console.log('찾은 reviewItemList :', itemReviews)
+		return res.status(200).json({status:'success',data: itemReviews})
 	}catch(e){
 		console.error(e); 
 		return res.status(400).json({status:'fail', error:e.message})
