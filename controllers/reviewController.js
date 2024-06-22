@@ -63,15 +63,15 @@ reviewController.getMyReviewList=async(req, res)=>{
 }
 reviewController.getItemReviewList=async(req, res)=>{
 	try{
-		console.log('getItemReviewList 시작')
+		// console.log('getItemReviewList 시작')
 		const productId = req.params.id
 		const itemReviews = await Review.find({
 			    // 해당 아이템에 대해 리뷰가 여러개일 수 있다.
 				productId: new mongoose.Types.ObjectId(productId), 
-				// isDeleted:false
+				isDeleted:false
 		}).populate('authorId', '_id name email image').populate('productId', '_id name image price')
 
-		console.log('찾은 reviewItemList :', itemReviews)
+		// console.log('찾은 reviewItemList :', itemReviews)
 		return res.status(200).json({status:'success',data: itemReviews})
 	}catch(e){
 		console.error(e); 
@@ -80,9 +80,9 @@ reviewController.getItemReviewList=async(req, res)=>{
 }
 reviewController.updateReview=async(req, res)=>{
 	try{
-		const {reviewId, title,image,content,star} =req.body
+		const {_id, title,image,content,star} =req.body
 		const updatedReview = await Review.findByIdAndUpdate(
-			reviewId,
+			_id,
 			{title, image, content, star},
 			{new: true}
 		)
