@@ -9,9 +9,6 @@ const reviewController={}
 reviewController.createReview=async(req, res)=>{
 	try{
 		const {author, authorId, productId, title,image,content,star} = req.body;
-		console.log('받은 author', author)
-		console.log('받은 authorId', authorId)
-		console.log('받은 title', title)
 
 		// Validation
         if (!title || !content || star == null) {
@@ -30,6 +27,7 @@ reviewController.createReview=async(req, res)=>{
             return res.status(404).json({ status: 'fail', message: 'User not found.' });
         }
 		user.reviewIds.push(review._id)
+		user.credit += 1000  // 1000 credit 추가
 		await user.save()
 		console.log('user.reviewedIds에 review._id 추가함')
 
