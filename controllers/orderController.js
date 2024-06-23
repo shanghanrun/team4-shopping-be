@@ -13,7 +13,7 @@ orderController.createOrder = async(req, res)=>{
 		const userId = req.userId
 		const {shipTo, contact, totalPrice, salePrice,items} = req.body;
 
-		console.log('shipTo', shipTo)
+		// console.log('shipTo', shipTo)
 
 		// 재고확인 & 재고 업데이트
 		const insufficientStockItems = await productController.checkItemsStock(items)
@@ -44,14 +44,14 @@ orderController.createOrder = async(req, res)=>{
 		user.orders.push(orderNum);
 		// console.log('오더생성하면서 user orders정보 업데이트')
 
-		console.log('기존 user의 purchasedItems :', user.purchasedItems)
+		// console.log('기존 user의 purchasedItems :', user.purchasedItems)
 		if (!Array.isArray(user.purchasedItems)) {
 			user.purchasedItems = [];
 		}
 				
 		items.forEach(item => {
 			const productId = item.productId.toString();
-			console.log('구매한 productId', productId);
+			// console.log('구매한 productId', productId);
 			const quantity = item.qty;
 
 			let productExists = false;
@@ -68,7 +68,7 @@ orderController.createOrder = async(req, res)=>{
 			}
 		});
 
-		console.log('user purchasedItems :', user.purchasedItems) // 여기까지 잘 되었다.
+		// console.log('user purchasedItems :', user.purchasedItems) // 여기까지 잘 되었다.
 		
 		await user.save() //일단 저장
 	
@@ -81,19 +81,19 @@ orderController.createOrder = async(req, res)=>{
 			...shipTo,
 			address2: shipTo.address2 || ''
 		}; //undefined가 아닌 빈문자열이 되게
-		console.log('normalizedShipTo :', normalizedShipTo)
-		console.log('user.shipTo :', user.shipTo)
+		// console.log('normalizedShipTo :', normalizedShipTo)
+		// console.log('user.shipTo :', user.shipTo)
 
 		const addressExists = user.shipTo.some(existingShipTo => existingShipTo.address === shipTo.address && (existingShipTo.address2 || '') === normalizedShipTo.address2);
 		
-		console.log('addressExists? :', addressExists)
+		// console.log('addressExists? :', addressExists)
 
 		if(!addressExists){
 			user.shipTo.push(normalizedShipTo);
-			console.log('user.shipTo에 추가한 결과:', user.shipTo)
+			// console.log('user.shipTo에 추가한 결과:', user.shipTo)
 		}
 
-		console.log('user shipTo 최종결과 :', user.shipTo)
+		// console.log('user shipTo 최종결과 :', user.shipTo)
 
 		const defaultTotalPurchase = user.totalPurchase
 		user.totalPurchase = defaultTotalPurchase + totalPrice
@@ -101,8 +101,8 @@ orderController.createOrder = async(req, res)=>{
 		// console.log('user totalPurchase :', user.totalPurchase)
 
 		await user.save()
-		console.log('최종 user 내용:',user)
-		console.log('user의 orders, purchasedItems 정보가 업데이트 되었습니다.')
+		// console.log('최종 user 내용:',user)
+		// console.log('user의 orders, purchasedItems 정보가 업데이트 되었습니다.')
 		
 
 		return res.status(200).json({status:'ok', orderNum: orderNum})

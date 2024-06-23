@@ -187,6 +187,40 @@ userController.updateUserViewed=async(req,res)=>{
 		res.status(400).json({status:'fail', error:e.message})
 	}
 }
+userController.updateUserPassword = async(req,res)=>{
+	try{
+		const {userId, newPassword} = req.body;
+		console.log('newPassword : ', newPassword)
+		const user = await User.findById(userId)
+			if(!user){
+				throw new Error('유저를 찾는데 실패했습니다.')
+			}
+	
+			const hash = bcrypt.hashSync(newPassword, saltRounds)
+			user.password = hash
+			await user.save()
+	
+			return res.status(200).json({status:'success', data: user})
+	}catch(e){
+		res.status(400).json({status:'fail', error:e.message})
+	}
+}
+userController.updateUserShipTo = async(req,res)=>{
+	try{
+		const {userId, newShipTo} = req.body;
+		const user = await User.findById(userId)
+			if(!user){
+				throw new Error('유저를 찾는데 실패했습니다.')
+			}
+
+			user.shipTo = newShipTo
+			await user.save()
+	
+			return res.status(200).json({status:'success', data: user})
+	}catch(e){
+		res.status(400).json({status:'fail', error:e.message})
+	}
+}
 userController.deleteUserViewed=async(req,res)=>{
 	try{
 		const userId = req.userId
