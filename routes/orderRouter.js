@@ -14,6 +14,9 @@ orderRouter.get('/all', authController.authenticate, orderController.getAllUserO
 // user의 order가져오기
 orderRouter.get('/user-order/:id', orderController.getUserOrder)
 
+// 모든 사람의 preparing order가져오기
+orderRouter.get('/preparing',orderController.getPreparingOrders)
+
 // 물품 배송상태를 admin이 수정함
 orderRouter.put('/', authController.authenticate, authController.checkAdminPermission, orderController.updateOrder)
 

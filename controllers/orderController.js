@@ -6,7 +6,7 @@ const productController = require('./productController')
 const cartController = require('./cartController')
 
 const orderController={}
-const PAGE_SIZE =5
+const PAGE_SIZE =10
 
 orderController.createOrder = async(req, res)=>{
 	try{
@@ -160,6 +160,7 @@ orderController.getAllUserOrderList=async(req, res)=>{
 	const PAGE_SIZE = 10
 	try{
 		const {page, orderNum} = req.query
+		
 		// const userId =  req.userId  // admin이 검색하는 거라, 누구의 order인지 구별필요없다.
 		// console.log('다음 orderNum 검색: ', orderNum)
 
@@ -173,7 +174,7 @@ orderController.getAllUserOrderList=async(req, res)=>{
 
 		let query = Order.find(cond)
 		let response = {status:'success'}
-
+		
 		if(page){
 			query.skip((page-1)*PAGE_SIZE).limit(PAGE_SIZE)
 			const totalItemNum = await Order.find(cond).countDocuments()
@@ -188,6 +189,17 @@ orderController.getAllUserOrderList=async(req, res)=>{
 		// console.log('찾은 orderList', orderList)
 
 		res.status(200).json(response)
+	}catch(e){
+		res.status(400).json({status:'fail', error:e.message})
+	}
+}
+orderController.getPreparingOrders=async(req,res)=>{
+	try{
+		// 모드 유저의 오더를 찾아야 된다.
+		const orders = await Order.find()
+		const preparingOrders = orders.filter((order)=> order.status === 'preparing')
+		console.log('preparingOrders :', preparingOrders)
+		res.status(200).json({status:'ok', data:preparingOrders})
 	}catch(e){
 		res.status(400).json({status:'fail', error:e.message})
 	}

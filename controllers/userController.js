@@ -207,13 +207,28 @@ userController.updateUserPassword = async(req,res)=>{
 }
 userController.updateUserShipTo = async(req,res)=>{
 	try{
-		const {userId, newShipTo} = req.body;
+		const {userId, selectedAddress} = req.body;
 		const user = await User.findById(userId)
 			if(!user){
 				throw new Error('유저를 찾는데 실패했습니다.')
 			}
+			const list =[...user.shipTo]
 
-			user.shipTo = newShipTo
+			// 객체의 값 비교는 구체적으로 해야 된다.
+			const addressAreEqual =(a, b)=>{
+				return (
+					a.address === b.address &&
+					a.address2 === b.address2 &&
+					a.city === b.city &&
+					a.zip === b.zip &&
+					a.contact === b.contact &&
+					a.firstName === b.firstName &&
+					a.lastName === b.lastName
+				)
+			}
+			const tempList = list.filter((address)=> !addressAreEqual(address,selectedAddress)) //제거
+			tempList.unshift(selectedAddress) // 맨 앞의 요소로 넣기
+			user.shipTo = tempList
 			await user.save()
 	
 			return res.status(200).json({status:'success', data: user})
