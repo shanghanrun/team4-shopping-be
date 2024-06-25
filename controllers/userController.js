@@ -9,6 +9,8 @@ require('dotenv').config()
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
 const secretKey = process.env.JWT_SECRET_KEY
 const mongoose = require('mongoose'); 
+const path = require('path');
+const fs = require('fs');
 
 userController.createUser=async(req, res)=>{
 	try{
@@ -262,5 +264,41 @@ userController.deleteUserViewed=async(req,res)=>{
 		res.status(400).json({status:'fail', error:e.message})
 	}
 }
+
+userController.cloudUser2Json=async(req, res)=>{
+	try{
+		const users = await User.find().lean() //lean() 몽구스 객체를 자바스크립트 객체로 변환
+		const jsonFilePath = path.join(__dirname, 'users.json'); //__dirname현재디렉토리
+
+		fs.writeFileSync(jsonFilePath, JSON.stringify(users, null, 2));
+		console.log('JSON file was written successfully');
+		res.status(200).json({message:'몽고클라우드 디비로부터 json파일로 잘 저장되었습니다.'})
+	}catch(e){
+		res.status(400).json({ status: 'fail', error: e.message });
+	}
+}
+
+userController.jsonUser2Cloud=async(req,res)=>{
+	try{
+		const jsonFilePath = path.join(__dirname, 'users.json'); // JSON 파일 경로
+
+		// JSON 파일 읽기
+		const data = fs.readFileSync(jsonFilePath, 'utf8');
+		const users = JSON.parse(data);
+
+		// 기존 데이터 제거 (선택 사항) 우선 클라우드 디비의 해당 컬렉션 비워둔다.
+		await User.deleteMany({});
+
+		// JSON 데이터를 MongoDB에 저장
+		await User.insertMany(users);
+		console.log('Data imported to MongoDB successfully');
+
+		res.status(200).json({message:'Data imported to MongoDB successfully.'});
+	}catch(e){
+		res.status(400).json({ status: 'fail', error: e.message });
+	}
+}
+
+
 
 module.exports = userController;

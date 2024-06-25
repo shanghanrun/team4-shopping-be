@@ -17,6 +17,10 @@ orderRouter.get('/user-order/:id', orderController.getUserOrder)
 // 모든 사람의 preparing order가져오기
 orderRouter.get('/preparing',orderController.getPreparingOrders)
 
+// 디비와 데이터교환
+orderRouter.get('/cloud-order-to-json', orderController.cloudOrder2Json)
+orderRouter.get('/json-order-to-cloud', orderController.jsonOrder2Cloud)
+
 // 물품 배송상태를 admin이 수정함
 orderRouter.put('/', authController.authenticate, authController.checkAdminPermission, orderController.updateOrder)
 

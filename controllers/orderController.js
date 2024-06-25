@@ -4,6 +4,8 @@ const User = require('../model/User')
 const { randomStringGenerator } = require('../utils/randomStringGenerator')
 const productController = require('./productController')
 const cartController = require('./cartController')
+const path = require('path');
+const fs = require('fs');
 
 const orderController={}
 const PAGE_SIZE =10
@@ -255,6 +257,41 @@ orderController.getUserOrder=async(req,res)=>{
 		res.status(200).json({status:'ok', data: foundOrder})
 	}catch(e){
 		res.status(400).json({status:'fail', error:e.message})
+	}
+}
+
+orderController.cloudOrder2Json=async(req, res)=>{
+	try{
+		const orders = await Order.find().lean() //lean() 몽구스 객체를 자바스크립트 객체로 변환
+		const jsonFilePath = path.join(__dirname, 'orders.json'); //__dirname현재디렉토리
+
+		// JSON 파일로 저장
+		fs.writeFileSync(jsonFilePath, JSON.stringify(orders, null, 2));
+		console.log('JSON file was written successfully');
+		res.status(200).json({message:'몽고클라우드 디비로부터 json파일로 잘 저장되었습니다.'})
+	}catch(e){
+		res.status(400).json({ status: 'fail', error: e.message });
+	}
+}
+
+orderController.jsonOrder2Cloud=async(req,res)=>{
+	try{
+		const jsonFilePath = path.join(__dirname, 'orders.json'); // JSON 파일 경로
+
+		// JSON 파일 읽기
+		const data = fs.readFileSync(jsonFilePath, 'utf8');
+		const orders = JSON.parse(data);
+
+		// 기존 데이터 제거 (선택 사항) 우선 클라우드 디비의 해당 컬렉션 비워둔다.
+		await Order.deleteMany({});
+
+		// JSON 데이터를 MongoDB에 저장
+		await Order.insertMany(orders);
+		console.log('Data imported to MongoDB successfully');
+
+		res.status(200).json({message:'Data imported to MongoDB successfully.'});
+	}catch(e){
+		res.status(400).json({ status: 'fail', error: e.message });
 	}
 }
 

@@ -1,5 +1,7 @@
 const Product = require('../model/Product')
 const mongoose = require('mongoose'); 
+const path = require('path');
+const fs = require('fs');
 
 const PAGE_SIZE =5
 const productController={}
@@ -217,21 +219,38 @@ productController.getLowStockProducts = async (req, res) => {
 };
 
 
-productController.cloudDb2Json=async(req, res)=>{
+productController.cloudProduct2Json=async(req, res)=>{
 	try{
-		console.log('기능 준비중...')
-		res.status(200).json({message:'기능 준비중...'})
-	}catch(e){
+		const products = await Product.find().lean() //lean() 몽구스 객체를 자바스크립트 객체로 변환
+		const jsonFilePath = path.join(__dirname, 'products.json'); //__dirname현재디렉토리
 
+		// JSON 파일로 저장
+		fs.writeFileSync(jsonFilePath, JSON.stringify(products, null, 2));
+		console.log('JSON file was written successfully');
+		res.status(200).json({message:'몽고클라우드 디비로부터 json파일로 잘 저장되었습니다.'})
+	}catch(e){
+		res.status(400).json({ status: 'fail', error: e.message });
 	}
 }
 
-productController.json2CloudDb=async(req,res)=>{
+productController.jsonProduct2Cloud=async(req,res)=>{
 	try{
-		console.log('기능 준비중...')
-		res.status(200).json({message:'기능 준비중...'})
+		const jsonFilePath = path.join(__dirname, 'products.json'); // JSON 파일 경로
+
+		// JSON 파일 읽기
+		const data = fs.readFileSync(jsonFilePath, 'utf8');
+		const products = JSON.parse(data);
+
+		// 기존 데이터 제거 (선택 사항) 우선 클라우드 디비의 해당 컬렉션 비워둔다.
+		await Product.deleteMany({});
+
+		// JSON 데이터를 MongoDB에 저장
+		await Product.insertMany(products);
+		console.log('Data imported to MongoDB successfully');
+
+		res.status(200).json({message:'Data imported to MongoDB successfully.'});
 	}catch(e){
-		
+		res.status(400).json({ status: 'fail', error: e.message });
 	}
 }
 
@@ -256,6 +275,23 @@ productController.getViewedList=async(req,res)=>{
 		// }));
 		
 		res.status(200).json({status:'ok', data:foundProductList})
+	}catch(e){
+		res.status(400).json({ status: 'fail', error: e.message });
+	}
+}
+
+productController.getOftenBuyList=async(req,res)=>{
+	try{
+		const {objectIds} = req.body
+		// 문자열 ID를 ObjectId 형식으로 변환
+    	const objectIdArray = objectIds.map(id => new mongoose.Types.ObjectId(id));
+
+		// MongoDB에서 ObjectId 배열에 해당하는 제품 정보 가져오기
+		const products = await Product.find({
+			_id: { $in: objectIdArray }
+		});
+
+    	res.status(200).json({ data: products });
 	}catch(e){
 		res.status(400).json({ status: 'fail', error: e.message });
 	}

@@ -1,0 +1,326 @@
+[
+  {
+    "_id": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "password": "$2a$10$.3zbFywdhUYftiyr7U500ut4CaER8mIW2Al1v5ce601aspwInNr0K",
+    "name": "최병권",
+    "level": "admin",
+    "createdAt": "Sat May 25 2024 14:59:52 GMT+0900 (한국 표준시)",
+    "updatedAt": "2024-06-22T03:42:44.745Z",
+    "__v": 5,
+    "memo": "주인장입니다. 실물이예요...",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717136329/sqj9vxhikahadfxccwlw.jpg",
+    "coupon": 5000,
+    "credit": 244442,
+    "orders": [
+      "vt1g186w4q"
+    ],
+    "shipTo": [],
+    "totalPurchase": 3850000,
+    "purchasedItems": [
+      {}
+    ],
+    "reviewIds": [
+      "667643e7216275a950bd1fa0",
+      "667647542432789e96b31f0c",
+      "667648342432789e96b31f13"
+    ],
+    "viewedIds": [
+      "6654240e3d81f02f29d66a36"
+    ],
+    "wishList": []
+  },
+  {
+    "_id": "6652e8c0ceabaceac950d90d",
+    "email": "react@new.com",
+    "password": "$2a$10$gJ6vL5e/kZWsUYNqijHi7OeETxZ.p74zTpap7Prurm9PYSCwDNfS.",
+    "name": "코코",
+    "level": "customer",
+    "createdAt": "2024-05-26T07:46:08.446Z",
+    "updatedAt": "2024-06-17T05:33:56.834Z",
+    "__v": 0,
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717405825/m7pu7dte0rtmwltbjkww.jpg",
+    "memo": "ive 장원영. 궁금해서 놀러왔어요.",
+    "coupon": 0,
+    "credit": 49937,
+    "totalPurchase": 1448740
+  },
+  {
+    "_id": "6652ead6ceabaceac950d912",
+    "email": "aa@naver.com",
+    "password": "$2a$10$IxXglyjtcufQvdkDVuMAkur0Twk5SaMTy85WTG6pqd/Tkg34qS5Va",
+    "name": "어글리 jumma",
+    "level": "customer",
+    "createdAt": "2024-05-26T07:55:02.101Z",
+    "updatedAt": "2024-05-31T06:38:07.377Z",
+    "__v": 0,
+    "memo": "요주의, 진상!",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717137479/bgr802q6hx3ugf9cybhx.png",
+    "coupon": 0,
+    "credit": 10000,
+    "totalPurchase": 0
+  },
+  {
+    "_id": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "password": "$2a$10$/jghWfb3MoBbkgCEe.dVi.3KjOHIajReIC7ovxZPnBDBQIdBPbDVW",
+    "name": "choco",
+    "level": "fellow",
+    "createdAt": "2024-05-26T07:37:43.542Z",
+    "updatedAt": "2024-06-23T08:09:21.623Z",
+    "__v": 22,
+    "memo": "동료",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717137599/d7b5lfzxwdbskklhnz6u.png",
+    "coupon": 900,
+    "credit": 6170,
+    "orders": [
+      "wko899f87v",
+      "rd6djcdzz4",
+      "hqr694cs6l",
+      "xa6xt8x578",
+      "2c9quwzn81",
+      "000162wyfb",
+      "46y39gsag4",
+      "6wys4tnpb4",
+      "n8bq0m96tg",
+      "1nyf3bumo8",
+      "22txedevdr",
+      "gg5bjyywhc",
+      "ju9c9qxiow",
+      "22f74rc9i1"
+    ],
+    "reviewIds": [
+      "66759140682d2fc2d416159c"
+    ],
+    "shipTo": [
+      {
+        "address": "충북 청주시 123",
+        "address2": "2",
+        "city": "청주",
+        "zip": "28668",
+        "contact": "010-1234-5678",
+        "firstName": "코",
+        "lastName": "초"
+      },
+      {
+        "firstName": "코",
+        "lastName": "초",
+        "contact": "010-1234-5678",
+        "address": "충북 청주시 345",
+        "address2": "2",
+        "city": "청주",
+        "zip": "28668"
+      }
+    ],
+    "totalPurchase": 3325350,
+    "wishList": [],
+    "purchasedItems": [
+      {
+        "6654291b76f156f779f23b8c": 3
+      },
+      {
+        "665423013d81f02f29d66a2e": 2
+      },
+      {
+        "6654240e3d81f02f29d66a36": 1
+      }
+    ],
+    "viewedIds": [
+      "6654511fc454f7966b845a1d",
+      "6654240e3d81f02f29d66a36",
+      "665423013d81f02f29d66a2e"
+    ]
+  },
+  {
+    "_id": "6652ece60476d94ec5ff600f",
+    "email": "newby@n.com",
+    "password": "$2a$10$LmF/Jub1/C5vuq0LSz785uuWoIYk6CLQsGO24c8jKT7psfMHieg3q",
+    "name": "Flex woman",
+    "level": "customer",
+    "createdAt": "2024-05-26T08:03:50.511Z",
+    "updatedAt": "2024-06-22T04:13:14.739Z",
+    "__v": 6,
+    "memo": "vip고객",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717137284/hyevnumz06as5dsxbouw.jpg",
+    "coupon": 30000,
+    "credit": 50000,
+    "orders": [],
+    "purchasedItems": [
+      {}
+    ],
+    "reviewIds": [
+      "667648f22432789e96b31fe3",
+      "66764c512432789e96b32007",
+      "66764cd52432789e96b3200e"
+    ],
+    "shipTo": [],
+    "totalPurchase": 50000000,
+    "viewedIds": [
+      "6654240e3d81f02f29d66a36",
+      "66568f066deab5519a841b65",
+      "6654469b8dc4269f917b337f"
+    ],
+    "wishList": []
+  },
+  {
+    "_id": "66598a026d3c4af7176fe085",
+    "email": "hong@cc.com",
+    "password": "$2a$10$uOiFpo0zAIztZJ.tNEXi0.sEk8hmvtQCnSzwWoRMNEwhHAlMxwvku",
+    "name": "홍길동",
+    "memo": "기인",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717736305/jaacbc09do2crjwqukka.jpg",
+    "level": "admin",
+    "createdAt": "2024-05-31T08:27:46.915Z",
+    "updatedAt": "2024-06-07T13:33:28.722Z",
+    "__v": 0,
+    "coupon": 0,
+    "credit": 10000,
+    "totalPurchase": 0
+  },
+  {
+    "_id": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "password": "$2a$10$SDOVrvVHQ.29o3kFojBz4O7hCx6VSldd9w7pgwacLzbEWlqHdekem",
+    "name": "I AM_A teacher",
+    "level": "admin",
+    "createdAt": "2024-06-01T02:55:18.763Z",
+    "updatedAt": "2024-06-24T07:47:52.055Z",
+    "__v": 35,
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717405554/pxq094jrs7stquvf5q0l.png",
+    "memo": "꼼꼼한 담임샘",
+    "coupon": 30000,
+    "credit": 88552,
+    "orders": [
+      "7mbzfekwu5",
+      "b9ksq34obe",
+      "jz4zfsotds",
+      "rqj04asud8"
+    ],
+    "totalPurchase": 176480,
+    "purchasedItems": [
+      {},
+      {
+        "66568ec76deab5519a841b5f": 1
+      },
+      {
+        "6654511fc454f7966b845a1d": 3
+      },
+      {
+        "66602e268c5328ea84f0c2e4": 2
+      }
+    ],
+    "reviewIds": [],
+    "viewedIds": [
+      "665696d96deab5519a841c16",
+      "6654291b76f156f779f23b8c",
+      "6654511fc454f7966b845a1d",
+      "66568ec76deab5519a841b5f",
+      "66602e268c5328ea84f0c2e4"
+    ],
+    "wishList": [],
+    "shipTo": [
+      {
+        "firstName": "이나",
+        "lastName": "빛",
+        "contact": "010-1223-1234",
+        "address": "경기도 인천시",
+        "address2": "3층 noona Company",
+        "city": "인천",
+        "zip": "12345"
+      },
+      {
+        "address": "경기도 인천시",
+        "address2": "2층 noona Company",
+        "city": "인천",
+        "contact": "010-1223-1234",
+        "zip": "12345",
+        "firstName": "반짝",
+        "lastName": "별"
+      }
+    ]
+  },
+  {
+    "_id": "666077728c5328ea84f0c5ba",
+    "email": "test@naver.com",
+    "password": "$2a$10$XIqc73FCUBRJfQLyeJqFn.0.Jo1K6Sl5gObVx91qb45O8gaoiE.aO",
+    "name": "test",
+    "memo": "",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717736420/mv7owty4z0jm5podjfj8.jpg",
+    "level": "customer",
+    "credit": 11225,
+    "coupon": 0,
+    "createdAt": "2024-06-05T14:34:26.108Z",
+    "updatedAt": "2024-06-07T05:00:25.694Z",
+    "__v": 0
+  },
+  {
+    "_id": "666681e08c5328ea84f0d305",
+    "email": "test@test.com",
+    "password": "$2a$10$FnjeRvUxfofIU5Pdi5Hzbu/WXHwkg093XeXcy6R/UYrJ5Ml5Zz4qm",
+    "name": "test",
+    "memo": "",
+    "image": "",
+    "level": "customer",
+    "credit": 10000,
+    "coupon": 0,
+    "createdAt": "2024-06-10T04:32:32.968Z",
+    "updatedAt": "2024-06-10T04:32:32.968Z",
+    "__v": 0
+  },
+  {
+    "_id": "666bb6fa69aea9a8cc239237",
+    "email": "codingnoona@codingnoona.com",
+    "password": "$2a$10$CC09edGm8aChoSNivSox..jO4fzK/C8XzUKv1/2b.nQXbZ2swUYeK",
+    "name": "김빛나",
+    "memo": "끝까지 에러검사.... ㄷㄷㄷ",
+    "image": "",
+    "level": "customer",
+    "credit": 10000,
+    "coupon": 0,
+    "createdAt": "2024-06-14T03:20:26.201Z",
+    "updatedAt": "2024-06-24T04:23:27.315Z",
+    "__v": 0
+  },
+  {
+    "_id": "666d4ab069aea9a8cc239591",
+    "email": "tallshe1008@gmail.com",
+    "password": "$2a$10$1YP1QHrKO9.0IltOl/5rU.JEk6Nrnx1WgUj3U9J9AdmIqMkeF2UW.",
+    "name": "Bitnam빛남",
+    "memo": "",
+    "image": "",
+    "level": "customer",
+    "credit": 10000,
+    "coupon": 0,
+    "createdAt": "2024-06-15T08:02:56.259Z",
+    "updatedAt": "2024-06-15T08:02:56.259Z",
+    "__v": 0
+  },
+  {
+    "_id": "666d4ae569aea9a8cc2395b7",
+    "email": "codingnuna1008@gmail.com",
+    "password": "$2a$10$yNYrMsb4zVrVd56g6RGX7uE/Q1mgpERRgXau/YBR9RIsrY6oSFxtW",
+    "name": "코딩알려주는누나",
+    "memo": "",
+    "image": "",
+    "level": "customer",
+    "credit": 10000,
+    "coupon": 0,
+    "createdAt": "2024-06-15T08:03:49.197Z",
+    "updatedAt": "2024-06-15T08:03:49.197Z",
+    "__v": 0
+  },
+  {
+    "_id": "666d880a69aea9a8cc2395d7",
+    "email": "new@c.com",
+    "password": "$2a$10$hOYQsAm.I2hE30t7bWsIs.WhEhcSBxLNz8LvpAvkQiB5ODLUhwEza",
+    "name": "cc",
+    "memo": "",
+    "image": "",
+    "level": "customer",
+    "credit": 10000,
+    "coupon": 0,
+    "createdAt": "2024-06-15T12:24:42.628Z",
+    "updatedAt": "2024-06-15T12:24:42.628Z",
+    "__v": 0
+  }
+]

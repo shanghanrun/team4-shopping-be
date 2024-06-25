@@ -1,0 +1,1509 @@
+[
+  {
+    "_id": "665429aa76f156f779f23bd8",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "shipping",
+    "orderNum": "7c2rxv469z",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668",
+      "address2": ""
+    },
+    "contact": "",
+    "totalPrice": 398500,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654240e3d81f02f29d66a35",
+        "name": "미디 스커트",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fae%2Fde%2Faede7b99fbd6228ab20f0879374842bd9310ee1a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0014",
+        "qty": 5,
+        "price": 34900,
+        "_id": "665429aa76f156f779f23bd9"
+      },
+      {
+        "productId": "6654291b76f156f779f23b8c",
+        "name": "코튼 플라운스 드레스",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F67%2F6d%2F676ddf6768a24c2b06237aad8612534e820f31ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "m",
+        "sku": "sku0016",
+        "qty": 4,
+        "price": 56000,
+        "_id": "665429aa76f156f779f23bda"
+      }
+    ],
+    "createdAt": "2024-05-27T06:35:22.169Z",
+    "updatedAt": "2024-05-28T08:21:36.167Z",
+    "__v": 0,
+    "salePrice": 0
+  },
+  {
+    "_id": "665592361e9fc1dfb5de4a48",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "shipping",
+    "orderNum": "hi956vmszc",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 207020,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654469b8dc4269f917b337b",
+        "name": "텍스처 니트 랩스커트",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F8f%2F8e%2F8f8ed9d7122b7e40065acbd8031dedd15ce4f2ab.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "xl",
+        "sku": "sku0004",
+        "qty": 3,
+        "price": 35000,
+        "_id": "665592361e9fc1dfb5de4a49"
+      },
+      {
+        "productId": "6654511fc454f7966b845a1e",
+        "name": "버튼 디테일 울 재킷",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F79%2F75%2F797554989d373ceba26bc076c099f742c1f65d0b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "s",
+        "sku": "sku0019",
+        "qty": 2,
+        "price": 34000,
+        "_id": "665592361e9fc1dfb5de4a4a"
+      },
+      {
+        "productId": "6654511fc454f7966b845a1e",
+        "name": "버튼 디테일 울 재킷",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F79%2F75%2F797554989d373ceba26bc076c099f742c1f65d0b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "m",
+        "sku": "sku0019",
+        "qty": 1,
+        "price": 34000,
+        "_id": "665592361e9fc1dfb5de4a4b"
+      },
+      {
+        "productId": "6655841e1e9fc1dfb5de4991",
+        "name": "임시로 넣음",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716880387/wmxddmsrdvfa7wgqdhrg.png",
+        "size": "s",
+        "sku": "sku0020",
+        "qty": 1,
+        "price": 20,
+        "_id": "665592361e9fc1dfb5de4a4c"
+      }
+    ],
+    "createdAt": "2024-05-28T08:13:42.509Z",
+    "updatedAt": "2024-06-24T03:39:03.333Z",
+    "__v": 0,
+    "salePrice": 0
+  },
+  {
+    "_id": "66559e45e5a6bfa9ce1ee39a",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "delivered",
+    "orderNum": "uds62piigc",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668",
+      "address2": ""
+    },
+    "contact": "",
+    "totalPrice": 190600,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654469b8dc4269f917b337a",
+        "name": "리넨 블렌드 풀온 팬츠",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb2%2F6d%2Fb26d5efd7e1cf7c705791c187295c6cbe2565742.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "m",
+        "sku": "sku0003",
+        "qty": 3,
+        "price": 45000,
+        "_id": "66559e45e5a6bfa9ce1ee39b"
+      },
+      {
+        "productId": "6654469b8dc4269f917b3381",
+        "name": "패턴 비치 타월",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F11%2Fdb%2F11dbf3d454094ae066b4d4c432c712abe228f09b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BENVIRONMENT%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+        "size": "m",
+        "sku": "sku0010",
+        "qty": 1,
+        "price": 30000,
+        "_id": "66559e45e5a6bfa9ce1ee39c"
+      },
+      {
+        "productId": "6654469b8dc4269f917b337c",
+        "name": "쇼트 슬리브 데님 셔츠",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6a%2F24%2F6a24b142ddaa8a7db0e478e2a87bbf41379c5d81.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "m",
+        "sku": "sku0005",
+        "qty": 1,
+        "price": 25600,
+        "_id": "66559e45e5a6bfa9ce1ee39d"
+      }
+    ],
+    "createdAt": "2024-05-28T09:05:09.435Z",
+    "updatedAt": "2024-06-24T03:05:27.736Z",
+    "__v": 0,
+    "salePrice": 0
+  },
+  {
+    "_id": "66583c0e4faa049f6882b033",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "preparing",
+    "orderNum": "7h51xrlvn9",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668",
+      "address2": ""
+    },
+    "contact": "",
+    "totalPrice": 114470,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "66568bf46deab5519a841b20",
+        "name": "레드 드레스",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716947934/ki6nbx8nvztuxsf8c9vh.png",
+        "size": "m",
+        "sku": "sku0022",
+        "qty": 3,
+        "price": 5000,
+        "_id": "66583c0e4faa049f6882b034"
+      },
+      {
+        "productId": "665696d96deab5519a841c16",
+        "name": "bee",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716950734/wpby03pemtt4fu7eendm.png",
+        "size": "s",
+        "sku": "sku0030",
+        "qty": 4,
+        "price": 23450,
+        "_id": "66583c0e4faa049f6882b035"
+      },
+      {
+        "productId": "66568f066deab5519a841b65",
+        "name": "상큼 이어링",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716948729/n1bsnussp2jahudpcy3f.png",
+        "size": "s",
+        "sku": "sku0024",
+        "qty": 1,
+        "price": 5670,
+        "_id": "66583c0e4faa049f6882b036"
+      }
+    ],
+    "createdAt": "2024-05-30T08:42:54.755Z",
+    "updatedAt": "2024-05-30T08:42:54.755Z",
+    "__v": 0,
+    "salePrice": 0
+  },
+  {
+    "_id": "665a97e24faa049f6882b20a",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "refund",
+    "orderNum": "65j5uvz4je",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668",
+      "address2": ""
+    },
+    "contact": "",
+    "totalPrice": 372800,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654240e3d81f02f29d66a35",
+        "name": "미디 스커트",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fae%2Fde%2Faede7b99fbd6228ab20f0879374842bd9310ee1a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "m",
+        "sku": "sku0014",
+        "qty": 2,
+        "price": 34900,
+        "_id": "665a97e24faa049f6882b20b"
+      },
+      {
+        "productId": "6654291b76f156f779f23b8c",
+        "name": "코튼 플라운스 드레스",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F67%2F6d%2F676ddf6768a24c2b06237aad8612534e820f31ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0016",
+        "qty": 4,
+        "price": 56000,
+        "_id": "665a97e24faa049f6882b20c"
+      },
+      {
+        "productId": "6658083402fdfc7745702b83",
+        "name": "dog",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717045235/qdnq7j2a9nij5g92rtjw.png",
+        "size": "s",
+        "sku": "sku0032",
+        "qty": 1,
+        "price": 23000,
+        "_id": "665a97e24faa049f6882b20d"
+      },
+      {
+        "productId": "6654291b76f156f779f23b8c",
+        "name": "코튼 플라운스 드레스",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F67%2F6d%2F676ddf6768a24c2b06237aad8612534e820f31ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "xs",
+        "sku": "sku0016",
+        "qty": 1,
+        "price": 56000,
+        "_id": "665a97e24faa049f6882b20e"
+      }
+    ],
+    "createdAt": "2024-06-01T03:39:14.517Z",
+    "updatedAt": "2024-06-05T03:12:56.734Z",
+    "__v": 0,
+    "salePrice": 0
+  },
+  {
+    "_id": "665a9b7062d7d225bdaa68cb",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "shipping",
+    "orderNum": "inklh0p0g8",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668",
+      "address2": ""
+    },
+    "contact": "",
+    "totalPrice": 24500,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665423013d81f02f29d66a2e",
+        "name": "브로드리 앙글레즈 스커트 ",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+        "size": "s",
+        "sku": "sku0001",
+        "qty": 1,
+        "price": 24500,
+        "_id": "665a9b7062d7d225bdaa68cc"
+      }
+    ],
+    "createdAt": "2024-06-01T03:54:24.730Z",
+    "updatedAt": "2024-06-24T03:35:31.016Z",
+    "__v": 0,
+    "salePrice": 0
+  },
+  {
+    "_id": "665d7f385a49c32cbe7fc31d",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "preparing",
+    "orderNum": "nt7qvfzhuc",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "zip": "28668",
+      "address2": "",
+      "city": ""
+    },
+    "contact": "",
+    "totalPrice": 253900,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654291b76f156f779f23b8d",
+        "name": "A라인 미니 스커트",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F85%2F74%2F8574007b1c3ae0a97fc65476d0d509e5131be27b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "s",
+        "sku": "sku0017",
+        "qty": 6,
+        "price": 34000,
+        "_id": "665d7f385a49c32cbe7fc31e"
+      },
+      {
+        "productId": "6654240e3d81f02f29d66a36",
+        "name": "프레이 에지 버뮤다 쇼츠",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa6%2F21%2Fa621f64c7ae17ded845a347dadf9b72c53af5cec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0015",
+        "qty": 1,
+        "price": 49900,
+        "_id": "665d7f385a49c32cbe7fc31f"
+      }
+    ],
+    "createdAt": "2024-06-03T08:30:48.963Z",
+    "updatedAt": "2024-06-03T08:30:48.963Z",
+    "__v": 0,
+    "salePrice": 0
+  },
+  {
+    "_id": "665e87bd6f528223b6d316c3",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "preparing",
+    "orderNum": "ktg97lzr9i",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "zip": "28668",
+      "address2": "",
+      "city": ""
+    },
+    "contact": "",
+    "totalPrice": 442910,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665d657f3df06ab3da76ee3b",
+        "name": "삼성전자 RB30R4051B1 냉장고",
+        "image": "https://img.danawa.com/prod_img/500000/547/455/img/9455547_3.jpg?shrink=330:*&_v=20240419142005",
+        "size": "m",
+        "sku": "sku0026",
+        "qty": 1,
+        "price": 442910,
+        "_id": "665e87bd6f528223b6d316c4"
+      }
+    ],
+    "createdAt": "2024-06-04T03:19:25.063Z",
+    "updatedAt": "2024-06-04T03:19:25.063Z",
+    "__v": 0
+  },
+  {
+    "_id": "665e89c49c307f3e6021561a",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "preparing",
+    "orderNum": "9u80n7shul",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "zip": "28668",
+      "address2": "",
+      "city": ""
+    },
+    "contact": "",
+    "totalPrice": 34000,
+    "salePrice": 29000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654291b76f156f779f23b8d",
+        "name": "A라인 미니 스커트",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F85%2F74%2F8574007b1c3ae0a97fc65476d0d509e5131be27b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "s",
+        "sku": "sku0017",
+        "qty": 1,
+        "price": 34000,
+        "_id": "665e89c49c307f3e6021561b"
+      }
+    ],
+    "createdAt": "2024-06-04T03:28:04.583Z",
+    "updatedAt": "2024-06-04T03:28:04.583Z",
+    "__v": 0
+  },
+  {
+    "_id": "665e8b7589a7499711a2d78e",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "preparing",
+    "orderNum": "2qe62bjkbg",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "zip": "28668",
+      "address2": "",
+      "city": ""
+    },
+    "contact": "",
+    "totalPrice": 1019340,
+    "salePrice": 1014340,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665d604a0610108d5c3dc77e",
+        "name": "LG전자 오브제컬렉션 네이처 S834MTE10 (클레이민트+베이지) 냉장고",
+        "image": "https://gdimg.gmarket.co.kr/3638459189/still/600?ver=1710819432",
+        "size": "m",
+        "sku": "sku0025",
+        "qty": 1,
+        "price": 1019340,
+        "_id": "665e8b7589a7499711a2d78f"
+      }
+    ],
+    "createdAt": "2024-06-04T03:35:17.805Z",
+    "updatedAt": "2024-06-04T03:35:17.805Z",
+    "__v": 0
+  },
+  {
+    "_id": "665e91b1453f28cff1b65cdc",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "04e7ojjbxs",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "zip": "28668",
+      "address2": "",
+      "city": ""
+    },
+    "contact": "",
+    "totalPrice": 56000,
+    "salePrice": 46000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654291b76f156f779f23b8c",
+        "name": "코튼 플라운스 드레스",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F67%2F6d%2F676ddf6768a24c2b06237aad8612534e820f31ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "xs",
+        "sku": "sku0016",
+        "qty": 1,
+        "price": 56000,
+        "_id": "665e91b1453f28cff1b65cdd"
+      }
+    ],
+    "createdAt": "2024-06-04T04:01:53.217Z",
+    "updatedAt": "2024-06-04T04:01:53.217Z",
+    "__v": 0
+  },
+  {
+    "_id": "665ea31e453f28cff1b65e1b",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "9ptz3qg7m5",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "zip": "28668",
+      "address2": "",
+      "city": ""
+    },
+    "contact": "123335-34",
+    "totalPrice": 2400,
+    "salePrice": 0,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "66568ec76deab5519a841b5f",
+        "name": "블루 탑 블루 스커트 세트",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716948665/obxg4sbmuqw8erijlcwg.png",
+        "size": "m",
+        "sku": "sku0023",
+        "qty": 10,
+        "price": 240,
+        "_id": "665ea31e453f28cff1b65e1c"
+      }
+    ],
+    "createdAt": "2024-06-04T05:16:14.872Z",
+    "updatedAt": "2024-06-04T05:16:14.872Z",
+    "__v": 0
+  },
+  {
+    "_id": "665fe1bb00ed3d6b0ad1594d",
+    "userId": "6652e8c0ceabaceac950d90d",
+    "email": "react@new.com",
+    "status": "preparing",
+    "orderNum": "sn6oofzv92",
+    "shipTo": {
+      "address": "서울 중구 남대문로 42-3",
+      "city": "seoul",
+      "zip": "04530"
+    },
+    "contact": "34-45",
+    "totalPrice": 888740,
+    "salePrice": 888740,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665d604a0610108d5c3dc781",
+        "name": "LG 올레드 tv evo 65인치 (163cm) OLED65G4KNA",
+        "image": "http://image.auction.co.kr/itemimage/41/2d/df/412ddf56f6.jpg",
+        "size": "m",
+        "sku": "sku0028",
+        "qty": 3,
+        "price": 294580,
+        "_id": "665fe1bb00ed3d6b0ad1594e"
+      },
+      {
+        "productId": "66568bf46deab5519a841b20",
+        "name": "레드 드레스",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716947934/ki6nbx8nvztuxsf8c9vh.png",
+        "size": "m",
+        "sku": "sku0022",
+        "qty": 1,
+        "price": 5000,
+        "_id": "665fe1bb00ed3d6b0ad1594f"
+      }
+    ],
+    "createdAt": "2024-06-05T03:55:39.868Z",
+    "updatedAt": "2024-06-05T03:55:39.868Z",
+    "__v": 0
+  },
+  {
+    "_id": "665ff4263c8cc37244e9beee",
+    "userId": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "status": "shipping",
+    "orderNum": "pakxwrh7kr",
+    "shipTo": {
+      "address": "서울 서초구 강남대로 241",
+      "city": "서울",
+      "zip": "06735"
+    },
+    "contact": "1223",
+    "totalPrice": 128000,
+    "salePrice": 98000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665423013d81f02f29d66a2e",
+        "name": "브로드리 앙글레즈 스커트 ",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+        "size": "m",
+        "sku": "sku0001",
+        "qty": 4,
+        "price": 24500,
+        "_id": "665ff4263c8cc37244e9beef"
+      },
+      {
+        "productId": "665d6a295a49c32cbe7fc193",
+        "name": "바니랜드 출동 구조대 장난감 세트",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717398040/fijbtpebczcax6xutifi.png",
+        "size": "s",
+        "sku": "sku0033",
+        "qty": 1,
+        "price": 30000,
+        "_id": "665ff4263c8cc37244e9bef0"
+      }
+    ],
+    "createdAt": "2024-06-05T05:14:14.208Z",
+    "updatedAt": "2024-06-05T09:26:56.394Z",
+    "__v": 0
+  },
+  {
+    "_id": "6660637e8c5328ea84f0c541",
+    "userId": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "status": "preparing",
+    "orderNum": "oa4ynb3fhg",
+    "shipTo": {
+      "address": "부산 사하구 감내1로 7",
+      "zip": "49376"
+    },
+    "contact": "없음",
+    "totalPrice": 568580,
+    "salePrice": 563680,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "66568f066deab5519a841b65",
+        "name": "상큼 이어링",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716948729/n1bsnussp2jahudpcy3f.png",
+        "size": "s",
+        "sku": "sku0024",
+        "qty": 1,
+        "price": 5670,
+        "_id": "6660637e8c5328ea84f0c542"
+      },
+      {
+        "productId": "665d657f3df06ab3da76ee3b",
+        "name": "삼성전자 RB30R4051B1 냉장고",
+        "image": "https://img.danawa.com/prod_img/500000/547/455/img/9455547_3.jpg?shrink=330:*&_v=20240419142005",
+        "size": "m",
+        "sku": "sku0026",
+        "qty": 1,
+        "price": 442910,
+        "_id": "6660637e8c5328ea84f0c543"
+      },
+      {
+        "productId": "66602e268c5328ea84f0c2e4",
+        "name": "nodejs 강의",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717579251/uotn8fd9rnnmvc6gqbpe.jpg",
+        "size": "m",
+        "sku": "sku0034",
+        "qty": 1,
+        "price": 120000,
+        "_id": "6660637e8c5328ea84f0c544"
+      }
+    ],
+    "createdAt": "2024-06-05T13:09:18.543Z",
+    "updatedAt": "2024-06-05T13:09:18.543Z",
+    "__v": 0
+  },
+  {
+    "_id": "666077a58c5328ea84f0c5e6",
+    "userId": "666077728c5328ea84f0c5ba",
+    "email": "test@naver.com",
+    "status": "preparing",
+    "orderNum": "owbxh4ywsi",
+    "shipTo": {
+      "address": "3123123",
+      "zip": "12312"
+    },
+    "contact": "010-5555-5555",
+    "totalPrice": 24500,
+    "salePrice": 24500,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665423013d81f02f29d66a2e",
+        "name": "브로드리 앙글레즈 스커트 ",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+        "size": "s",
+        "sku": "sku0001",
+        "qty": 1,
+        "price": 24500,
+        "_id": "666077a58c5328ea84f0c5e7"
+      }
+    ],
+    "createdAt": "2024-06-05T14:35:17.138Z",
+    "updatedAt": "2024-06-05T14:35:17.138Z",
+    "__v": 0
+  },
+  {
+    "_id": "666689168c5328ea84f0d390",
+    "userId": "6652e8c0ceabaceac950d90d",
+    "email": "react@new.com",
+    "status": "preparing",
+    "orderNum": "8dri9225wk",
+    "shipTo": {
+      "address": "광주 광산구 가마길 2-21",
+      "zip": "62404"
+    },
+    "contact": "010-5555-2222",
+    "totalPrice": 10000,
+    "salePrice": 10000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "66568bf46deab5519a841b20",
+        "name": "레드 드레스",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716947934/ki6nbx8nvztuxsf8c9vh.png",
+        "size": "m",
+        "sku": "sku0022",
+        "qty": 2,
+        "price": 5000,
+        "_id": "666689168c5328ea84f0d391"
+      }
+    ],
+    "createdAt": "2024-06-10T05:03:18.139Z",
+    "updatedAt": "2024-06-10T05:03:18.139Z",
+    "__v": 0
+  },
+  {
+    "_id": "6666c8648c5328ea84f0d45d",
+    "userId": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "status": "preparing",
+    "orderNum": "ispx1os64l",
+    "shipTo": {
+      "address": "22333",
+      "city": "청주",
+      "zip": "2866833"
+    },
+    "contact": "010-1234-1234",
+    "totalPrice": 280000,
+    "salePrice": 280000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654511fc454f7966b845a1d",
+        "name": "루즈핏 프린트 슬리브리스 탑",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3f%2Fbe%2F3fbe6beec55b7bdfcbf508f6765410d4412273eb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_printed%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0018",
+        "qty": 5,
+        "price": 56000,
+        "_id": "6666c8648c5328ea84f0d45e"
+      }
+    ],
+    "createdAt": "2024-06-10T09:33:24.460Z",
+    "updatedAt": "2024-06-10T09:33:24.460Z",
+    "__v": 0
+  },
+  {
+    "_id": "666918c769aea9a8cc237bfd",
+    "userId": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "status": "preparing",
+    "orderNum": "aibeurln5g",
+    "shipTo": {
+      "address": "23423423",
+      "city": "234234",
+      "zip": "234234"
+    },
+    "contact": "010-2222-3333",
+    "totalPrice": 2262780,
+    "salePrice": 2262780,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654240e3d81f02f29d66a36",
+        "name": "프레이 에지 버뮤다 쇼츠",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa6%2F21%2Fa621f64c7ae17ded845a347dadf9b72c53af5cec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0015",
+        "qty": 4,
+        "price": 49900,
+        "_id": "666918c769aea9a8cc237bfe"
+      },
+      {
+        "productId": "665d604a0610108d5c3dc77e",
+        "name": "LG전자 오브제컬렉션 네이처 S834MTE10 (클레이민트+베이지) 냉장고",
+        "image": "https://gdimg.gmarket.co.kr/3638459189/still/600?ver=1710819432",
+        "size": "m",
+        "sku": "sku0025",
+        "qty": 2,
+        "price": 1019340,
+        "_id": "666918c769aea9a8cc237bff"
+      },
+      {
+        "productId": "665423013d81f02f29d66a2e",
+        "name": "브로드리 앙글레즈 스커트 ",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+        "size": "s",
+        "sku": "sku0001",
+        "qty": 1,
+        "price": 24500,
+        "_id": "666918c769aea9a8cc237c00"
+      }
+    ],
+    "createdAt": "2024-06-12T03:40:55.699Z",
+    "updatedAt": "2024-06-13T17:42:27.030Z",
+    "__v": 0
+  },
+  {
+    "_id": "666fd3d4634928b6fda7be59",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "preparing",
+    "orderNum": "ckuprf4hf0",
+    "shipTo": {
+      "address": "충북 청주시",
+      "city": "청주",
+      "zip": "286"
+    },
+    "contact": "010-3333-2222",
+    "totalPrice": 24500,
+    "salePrice": 24500,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665423013d81f02f29d66a2e",
+        "name": "브로드리 앙글레즈 스커트 ",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+        "size": "m",
+        "sku": "sku0001",
+        "qty": 1,
+        "price": 24500,
+        "_id": "666fd3d4634928b6fda7be5a"
+      }
+    ],
+    "createdAt": "2024-06-17T06:12:36.884Z",
+    "updatedAt": "2024-06-17T06:12:36.884Z",
+    "__v": 0
+  },
+  {
+    "_id": "667151db30216b4ff31865b2",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "preparing",
+    "orderNum": "tuwacj1iyz",
+    "shipTo": {
+      "address": "충북 ",
+      "city": "청주",
+      "zip": "2866"
+    },
+    "contact": "",
+    "totalPrice": 350580,
+    "salePrice": 350580,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654511fc454f7966b845a1d",
+        "name": "루즈핏 프린트 슬리브리스 탑",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3f%2Fbe%2F3fbe6beec55b7bdfcbf508f6765410d4412273eb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_printed%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0018",
+        "qty": 1,
+        "price": 56000,
+        "_id": "667151db30216b4ff31865b3"
+      },
+      {
+        "productId": "665d604a0610108d5c3dc781",
+        "name": "LG 올레드 tv evo 65인치 (163cm) OLED65G4KNA",
+        "image": "http://image.auction.co.kr/itemimage/41/2d/df/412ddf56f6.jpg",
+        "size": "m",
+        "sku": "sku0028",
+        "qty": 1,
+        "price": 294580,
+        "_id": "667151db30216b4ff31865b4"
+      }
+    ],
+    "createdAt": "2024-06-18T09:22:35.851Z",
+    "updatedAt": "2024-06-18T09:22:35.851Z",
+    "__v": 0
+  },
+  {
+    "_id": "667153186f731e5a32d1d31b",
+    "userId": "66517e58e7d30c42f6c97f06",
+    "email": "idim7@naver.com",
+    "status": "preparing",
+    "orderNum": "vt1g186w4q",
+    "shipTo": {
+      "address": "충북 청주시",
+      "city": "청주",
+      "zip": "2868"
+    },
+    "contact": "",
+    "totalPrice": 3650000,
+    "salePrice": 3650000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665d604a0610108d5c3dc782",
+        "name": "삼성 tv KQ75QND85BFXKR Neo QLED TV 4K",
+        "image": "http://image.auction.co.kr/itemimage/43/8a/00/438a009876.jpg",
+        "size": "m",
+        "sku": "sku0029",
+        "qty": 1,
+        "price": 3650000,
+        "_id": "667153186f731e5a32d1d31c"
+      }
+    ],
+    "createdAt": "2024-06-18T09:27:52.235Z",
+    "updatedAt": "2024-06-18T09:27:52.235Z",
+    "__v": 0
+  },
+  {
+    "_id": "6671838ef2a6dad3c49eb47f",
+    "userId": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "status": "preparing",
+    "orderNum": "7mbzfekwu5",
+    "shipTo": {
+      "address": "충북 청주시 개신동 8888",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 91000,
+    "salePrice": 91000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654291b76f156f779f23b8c",
+        "name": "코튼 플라운스 드레스",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F67%2F6d%2F676ddf6768a24c2b06237aad8612534e820f31ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0016",
+        "qty": 1,
+        "price": 56000,
+        "_id": "6671838ef2a6dad3c49eb480"
+      },
+      {
+        "productId": "6654469b8dc4269f917b337b",
+        "name": "텍스처 니트 랩스커트",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F8f%2F8e%2F8f8ed9d7122b7e40065acbd8031dedd15ce4f2ab.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "m",
+        "sku": "sku0004",
+        "qty": 1,
+        "price": 35000,
+        "_id": "6671838ef2a6dad3c49eb481"
+      }
+    ],
+    "createdAt": "2024-06-18T12:54:38.207Z",
+    "updatedAt": "2024-06-18T12:54:38.207Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673ae26e2fc74406259d5fc",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "wko899f87v",
+    "shipTo": {
+      "address": "충북 청주시 234",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 82000,
+    "salePrice": 82000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654469b8dc4269f917b337e",
+        "name": "아쿠아 샌들",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb0%2F65%2Fb0655ed11483e4ba08be5d700db4edc6e1d76e05.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "s",
+        "sku": "sku0007",
+        "qty": 2,
+        "price": 12000,
+        "_id": "6673ae26e2fc74406259d5fd"
+      },
+      {
+        "productId": "6654469b8dc4269f917b337d",
+        "name": "스모킹 탑 드레스",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8b%2F23%2F8b235f73ce631c59184a15348492bd1c3de9da15.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "m",
+        "sku": "sku0006",
+        "qty": 1,
+        "price": 58000,
+        "_id": "6673ae26e2fc74406259d5fe"
+      }
+    ],
+    "createdAt": "2024-06-20T04:20:54.613Z",
+    "updatedAt": "2024-06-20T04:20:54.613Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673af89e2fc74406259d62a",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "rd6djcdzz4",
+    "shipTo": {
+      "address": "충북 청주시 234",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 43000,
+    "salePrice": 43000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654469b8dc4269f917b3380",
+        "name": "버터플라이 슬리브 탑",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F68%2F8d%2F688de7d317c0645483b547d7721775353b3af2ee.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0009",
+        "qty": 1,
+        "price": 43000,
+        "_id": "6673af89e2fc74406259d62b"
+      }
+    ],
+    "createdAt": "2024-06-20T04:26:49.147Z",
+    "updatedAt": "2024-06-20T04:26:49.147Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673b003e2fc74406259d65a",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "hqr694cs6l",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 24500,
+    "salePrice": 24500,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665423013d81f02f29d66a2e",
+        "name": "브로드리 앙글레즈 스커트 ",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+        "size": "s",
+        "sku": "sku0001",
+        "qty": 1,
+        "price": 24500,
+        "_id": "6673b003e2fc74406259d65b"
+      }
+    ],
+    "createdAt": "2024-06-20T04:28:51.378Z",
+    "updatedAt": "2024-06-20T04:28:51.378Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673b39be2fc74406259d67e",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "xa6xt8x578",
+    "shipTo": {
+      "address": "충북 청주시 234",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 56000,
+    "salePrice": 56000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654511fc454f7966b845a1d",
+        "name": "루즈핏 프린트 슬리브리스 탑",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3f%2Fbe%2F3fbe6beec55b7bdfcbf508f6765410d4412273eb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_printed%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0018",
+        "qty": 1,
+        "price": 56000,
+        "_id": "6673b39be2fc74406259d67f"
+      }
+    ],
+    "createdAt": "2024-06-20T04:44:11.437Z",
+    "updatedAt": "2024-06-20T04:44:11.437Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673b515e2fc74406259d6a4",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "2c9quwzn81",
+    "shipTo": {
+      "address": "충북 청주시 234",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 49900,
+    "salePrice": 49900,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654240e3d81f02f29d66a36",
+        "name": "프레이 에지 버뮤다 쇼츠",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa6%2F21%2Fa621f64c7ae17ded845a347dadf9b72c53af5cec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "m",
+        "sku": "sku0015",
+        "qty": 1,
+        "price": 49900,
+        "_id": "6673b515e2fc74406259d6a5"
+      }
+    ],
+    "createdAt": "2024-06-20T04:50:29.514Z",
+    "updatedAt": "2024-06-20T04:50:29.514Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673b73e8d19df2b97f326da",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "000162wyfb",
+    "shipTo": {
+      "address": "충북 청주시 234",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 49900,
+    "salePrice": 49900,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654240e3d81f02f29d66a36",
+        "name": "프레이 에지 버뮤다 쇼츠",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa6%2F21%2Fa621f64c7ae17ded845a347dadf9b72c53af5cec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "m",
+        "sku": "sku0015",
+        "qty": 1,
+        "price": 49900,
+        "_id": "6673b73e8d19df2b97f326db"
+      }
+    ],
+    "createdAt": "2024-06-20T04:59:42.399Z",
+    "updatedAt": "2024-06-20T04:59:42.399Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673b7a38d19df2b97f3270c",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "46y39gsag4",
+    "shipTo": {
+      "address": "충북 청주시 234",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 5000,
+    "salePrice": 5000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "66568bf46deab5519a841b20",
+        "name": "레드 드레스",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716947934/ki6nbx8nvztuxsf8c9vh.png",
+        "size": "m",
+        "sku": "sku0022",
+        "qty": 1,
+        "price": 5000,
+        "_id": "6673b7a38d19df2b97f3270d"
+      }
+    ],
+    "createdAt": "2024-06-20T05:01:23.242Z",
+    "updatedAt": "2024-06-20T05:01:23.242Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673c25a8d19df2b97f32741",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "6wys4tnpb4",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 1019340,
+    "salePrice": 1019340,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665d604a0610108d5c3dc77e",
+        "name": "LG전자 오브제컬렉션 네이처 S834MTE10 (클레이민트+베이지) 냉장고",
+        "image": "https://gdimg.gmarket.co.kr/3638459189/still/600?ver=1710819432",
+        "size": "m",
+        "sku": "sku0025",
+        "qty": 1,
+        "price": 1019340,
+        "_id": "6673c25a8d19df2b97f32742"
+      }
+    ],
+    "createdAt": "2024-06-20T05:47:06.826Z",
+    "updatedAt": "2024-06-20T05:47:06.826Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673c66b8d19df2b97f32765",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "n8bq0m96tg",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 294580,
+    "salePrice": 294580,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665d604a0610108d5c3dc781",
+        "name": "LG 올레드 tv evo 65인치 (163cm) OLED65G4KNA",
+        "image": "http://image.auction.co.kr/itemimage/41/2d/df/412ddf56f6.jpg",
+        "size": "m",
+        "sku": "sku0028",
+        "qty": 1,
+        "price": 294580,
+        "_id": "6673c66b8d19df2b97f32766"
+      }
+    ],
+    "createdAt": "2024-06-20T06:04:27.247Z",
+    "updatedAt": "2024-06-20T06:04:27.247Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673cedc22b80614db2feeef",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "1nyf3bumo8",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "address2": "2",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 112000,
+    "salePrice": 112000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654291b76f156f779f23b8c",
+        "name": "코튼 플라운스 드레스",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F67%2F6d%2F676ddf6768a24c2b06237aad8612534e820f31ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0016",
+        "qty": 2,
+        "price": 56000,
+        "_id": "6673cedc22b80614db2feef0"
+      }
+    ],
+    "createdAt": "2024-06-20T06:40:28.245Z",
+    "updatedAt": "2024-06-20T06:40:28.245Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673d2ef22b80614db2fef17",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "22txedevdr",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "address2": "2",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 69000,
+    "salePrice": 69000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6658083402fdfc7745702b83",
+        "name": "dog",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717045235/qdnq7j2a9nij5g92rtjw.png",
+        "size": "s",
+        "sku": "sku0032",
+        "qty": 3,
+        "price": 23000,
+        "_id": "6673d2ef22b80614db2fef18"
+      }
+    ],
+    "createdAt": "2024-06-20T06:57:51.588Z",
+    "updatedAt": "2024-06-20T06:57:51.588Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673dc6f22b80614db2fef7d",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "gg5bjyywhc",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "address2": "2",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 1396730,
+    "salePrice": 1396730,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654511fc454f7966b845a1e",
+        "name": "버튼 디테일 울 재킷",
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F79%2F75%2F797554989d373ceba26bc076c099f742c1f65d0b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        "size": "s",
+        "sku": "sku0019",
+        "qty": 2,
+        "price": 34000,
+        "_id": "6673dc6f22b80614db2fef7e"
+      },
+      {
+        "productId": "665d657f3df06ab3da76ee3b",
+        "name": "삼성전자 RB30R4051B1 냉장고",
+        "image": "https://img.danawa.com/prod_img/500000/547/455/img/9455547_3.jpg?shrink=330:*&_v=20240419142005",
+        "size": "m",
+        "sku": "sku0026",
+        "qty": 3,
+        "price": 442910,
+        "_id": "6673dc6f22b80614db2fef7f"
+      }
+    ],
+    "createdAt": "2024-06-20T07:38:23.788Z",
+    "updatedAt": "2024-06-20T07:38:23.788Z",
+    "__v": 0
+  },
+  {
+    "_id": "6673e5282f9bf223827d081d",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "ju9c9qxiow",
+    "shipTo": {
+      "address": "충북 청주시 123",
+      "address2": "2",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "010-1111-2222",
+    "totalPrice": 49000,
+    "salePrice": 49000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "665423013d81f02f29d66a2e",
+        "name": "브로드리 앙글레즈 스커트 ",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+        "size": "s",
+        "sku": "sku0001",
+        "qty": 2,
+        "price": 24500,
+        "_id": "6673e5282f9bf223827d081e"
+      }
+    ],
+    "createdAt": "2024-06-20T08:15:36.117Z",
+    "updatedAt": "2024-06-20T08:15:36.117Z",
+    "__v": 0
+  },
+  {
+    "_id": "6677d83130c80645ff3f7f44",
+    "userId": "6652e6c7ceabaceac950d904",
+    "email": "idim77@gmail.com",
+    "status": "preparing",
+    "orderNum": "22f74rc9i1",
+    "shipTo": {
+      "firstName": "코",
+      "lastName": "초",
+      "contact": "010-1234-5678",
+      "address": "충북 청주시 345",
+      "address2": "2",
+      "city": "청주",
+      "zip": "28668"
+    },
+    "contact": "",
+    "totalPrice": 74400,
+    "salePrice": 74400,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "6654240e3d81f02f29d66a36",
+        "name": "프레이 에지 버뮤다 쇼츠",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa6%2F21%2Fa621f64c7ae17ded845a347dadf9b72c53af5cec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "m",
+        "sku": "sku0015",
+        "qty": 1,
+        "price": 49900,
+        "_id": "6677d83130c80645ff3f7f45"
+      },
+      {
+        "productId": "665423013d81f02f29d66a2e",
+        "name": "브로드리 앙글레즈 스커트 ",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+        "size": "m",
+        "sku": "sku0001",
+        "qty": 1,
+        "price": 24500,
+        "_id": "6677d83130c80645ff3f7f46"
+      }
+    ],
+    "createdAt": "2024-06-23T08:09:21.193Z",
+    "updatedAt": "2024-06-23T08:09:21.193Z",
+    "__v": 0
+  },
+  {
+    "_id": "6677dad130c80645ff3f7fc0",
+    "userId": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "status": "preparing",
+    "orderNum": "b9ksq34obe",
+    "shipTo": {
+      "firstName": "good",
+      "lastName": "teacher",
+      "contact": "010-2222-3333",
+      "address": "경기도 인천시 123",
+      "address2": "2층  코알누Company",
+      "city": "인천",
+      "zip": "98888"
+    },
+    "contact": "010-2222-3333",
+    "totalPrice": 56240,
+    "salePrice": 56240,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "66568ec76deab5519a841b5f",
+        "name": "블루 탑 블루 스커트 세트",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716948665/obxg4sbmuqw8erijlcwg.png",
+        "size": "m",
+        "sku": "sku0023",
+        "qty": 1,
+        "price": 240,
+        "_id": "6677dad130c80645ff3f7fc1"
+      },
+      {
+        "productId": "6654511fc454f7966b845a1d",
+        "name": "루즈핏 프린트 슬리브리스 탑",
+        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3f%2Fbe%2F3fbe6beec55b7bdfcbf508f6765410d4412273eb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_printed%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+        "size": "s",
+        "sku": "sku0018",
+        "qty": 1,
+        "price": 56000,
+        "_id": "6677dad130c80645ff3f7fc2"
+      }
+    ],
+    "createdAt": "2024-06-23T08:20:33.098Z",
+    "updatedAt": "2024-06-23T08:20:33.098Z",
+    "__v": 0
+  },
+  {
+    "_id": "66791fa2948fd246747d6638",
+    "userId": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "status": "preparing",
+    "orderNum": "jz4zfsotds",
+    "shipTo": {
+      "firstName": "이나",
+      "lastName": "빛",
+      "contact": "010-1223-1234",
+      "address": "경기도 인천시",
+      "address2": "2층 noona Company",
+      "city": "인천",
+      "zip": "12345"
+    },
+    "contact": "010-1223-1234",
+    "totalPrice": 240,
+    "salePrice": 240,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "66568ec76deab5519a841b5f",
+        "name": "블루 탑 블루 스커트 세트",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716948665/obxg4sbmuqw8erijlcwg.png",
+        "size": "m",
+        "sku": "sku0023",
+        "qty": 1,
+        "price": 240,
+        "_id": "66791fa2948fd246747d6639"
+      }
+    ],
+    "createdAt": "2024-06-24T07:26:26.776Z",
+    "updatedAt": "2024-06-24T07:26:26.776Z",
+    "__v": 0
+  },
+  {
+    "_id": "6679200b948fd246747d6678",
+    "userId": "665a8d964faa049f6882b19e",
+    "email": "admin@gmail.com",
+    "status": "preparing",
+    "orderNum": "rqj04asud8",
+    "shipTo": {
+      "firstName": "이나",
+      "lastName": "빛",
+      "contact": "010-1223-1234",
+      "address": "경기도 인천시",
+      "address2": "3층 noona Company",
+      "city": "인천",
+      "zip": "12345"
+    },
+    "contact": "010-1223-1234",
+    "totalPrice": 120000,
+    "salePrice": 120000,
+    "isDeleted": false,
+    "items": [
+      {
+        "productId": "66602e268c5328ea84f0c2e4",
+        "name": "nodejs 강의",
+        "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717579251/uotn8fd9rnnmvc6gqbpe.jpg",
+        "size": "m",
+        "sku": "sku0034",
+        "qty": 1,
+        "price": 120000,
+        "_id": "6679200b948fd246747d6679"
+      }
+    ],
+    "createdAt": "2024-06-24T07:28:11.553Z",
+    "updatedAt": "2024-06-24T07:28:11.553Z",
+    "__v": 0
+  }
+]

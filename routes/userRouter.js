@@ -13,6 +13,8 @@ userRouter.post('/credit-coupon', userController.updateCreditCoupon)
 userRouter.get('/me', authController.authenticate, userController.getUser) //post 'api/user/me'
 userRouter.get('/', authController.authenticate, authController.checkAdminPermission, userController.getUserList)
 userRouter.get('/verify-token', authController.verifyToken)
+userRouter.get('/cloud-user-to-json', userController.cloudUser2Json)
+userRouter.get('/json-user-to-cloud', userController.jsonUser2Cloud)
 userRouter.put('/', authController.authenticate, authController.checkAdminPermission, userController.updateUser)
 
 userRouter.put('/viewed', authController.authenticate,userController.updateUserViewed)
