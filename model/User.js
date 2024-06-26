@@ -21,7 +21,8 @@ const userSchema = Schema({
 	orders:{type:Array, default:[]},
 	purchasedItems:{type:Array, default:{}},
 	viewedIds:{type:Array, default:[]},// 살핀 productId 들
-	reviewIds:{type:Array, default:[]}
+	reviewIds:{type:Array, default:[]},
+	inquiryIds:{type:Array, default:[]}// 문의글
 },{timestamps:true})
 
 userSchema.methods.toJSON =function(){

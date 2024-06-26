@@ -5,7 +5,7 @@ const replyController={}
 
 replyController.createReply = async (req, res)=>{
 	try{
-		const {reviewId, content} = req.body;  //bodyParser가 알아서 읽어 준다. 사실 클라이엔트에서 isDone:false로 자료 넘겨주어야 된다.
+		const {reviewId, inquiryId, content} = req.body;  //bodyParser가 알아서 읽어 준다. 사실 클라이엔트에서 isDone:false로 자료 넘겨주어야 된다.
 		const userId = req.userId
 		// console.log('reviewId :', reviewId)
 		// console.log('content :', content)
@@ -19,10 +19,19 @@ replyController.createReply = async (req, res)=>{
 		console.log('새 reply 저장됨:', newReply)
 
 		// Review를 찾아서, replies 배열에 새로운 replyId 추가
-		await Review.updateOne(
-			{ _id: reviewId },
-			{ $push: { replyIds: newReply._id }}
-		);
+		if(reviewId){
+			await Review.updateOne(
+				{ _id: reviewId },
+				{ $push: { replyIds: newReply._id }}
+			);
+		}
+		// inquiry에 답변한 경우
+		if(inquiryId){
+			await inquiry.updateOne(
+				{ _id: inquiryId },
+				{ $push: { replyIds: newReply._id }}
+			);
+		}
 
 		res.status(200).json({status:'ok', data: ''})
 	} catch(e){

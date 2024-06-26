@@ -7,6 +7,7 @@ const orderRouter = require('./orderRouter')
 const movieRouter = require('./movieRouter')
 const reviewRouter = require('./reviewRouter')
 const replyRouter = require('./replyRouter')
+const inquiryRouter = require('./inquiryRouter')
 
 indexRouter.use('/user', userRouter)
 indexRouter.use('/product', productRouter)
@@ -14,7 +15,8 @@ indexRouter.use('/cart', cartRouter)
 indexRouter.use('/order', orderRouter)
 indexRouter.use('/movie', movieRouter)
 indexRouter.use('/review', reviewRouter)
-indexRouter.use('reply', replyRouter)
+indexRouter.use('/reply', replyRouter)
+indexRouter.use('/inquiry', inquiryRouter)
 
 
 module.exports = indexRouter;
