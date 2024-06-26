@@ -38,8 +38,7 @@ inquiryController.createInquiry=async(req, res)=>{
 inquiryController.getInquiryList=async(req, res)=>{
 	try{
 		console.log('getInquiryList 호출됨')
-		const allInquiries = await Inquiry.find({isDeleted:false})
-		// const allInquiries = await Inquiry.find({isDeleted:false}).populate('authorId', '_id name email image')   populate가 항상 좋은 것은 아니다.  리액트에서 inquiry.authorId 하면 뒤에 객체가 붙어서 에러가 난다.
+		const allInquiries = await Inquiry.find({isDeleted:false}).populate('replyId', '_id author authorId title')   
 		console.log('allInquiries :', allInquiries)
 		return res.status(200).json({status:'success',data:allInquiries})
 	}catch(e){

@@ -18,6 +18,10 @@ replyController.createReply = async (req, res)=>{
 
 		console.log('새 reply 저장됨:', newReply)
 
+		// user에도 replyIds 배열에 replyId추가
+		foundUser.replyId.push(newReply._id)
+		await foundUser.save
+
 		// Review를 찾아서, replies 배열에 새로운 replyId 추가
 		if(reviewId){
 			await Review.updateOne(
@@ -38,7 +42,7 @@ replyController.createReply = async (req, res)=>{
 		res.status(400).json({status:'fail', error:e})
 	}
 } 
-
+//getReplyList가 없는 이유는 reply는 원래글에 따라서 다니기 때문이다.
 
 replyController.updateReply = async(req, res)=>{
 	try{
