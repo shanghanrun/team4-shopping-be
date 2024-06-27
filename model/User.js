@@ -22,7 +22,7 @@ const userSchema = Schema({
 	purchasedItems:{type:Array, default:{}},
 	viewedIds:{type:Array, default:[]},// 살핀 productId 들
 	reviewIds:{type:Array, default:[]},
-	inquiryIds:{type:Array, default:[]}// 문의글
+	inquiryIds:{type:Array, default:[]},// 문의글
 	replyIds:{type:Array, default:[]}// 댓글들
 },{timestamps:true})
 

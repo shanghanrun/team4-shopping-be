@@ -1,5 +1,6 @@
 const Reply = require('../model/Reply')
 const Review = require('../model/Review')
+const Inquiry = require('../model/Inquiry')
 const User = require('../model/User')
 const replyController={}
 
@@ -7,9 +8,6 @@ replyController.createReply = async (req, res)=>{
 	try{
 		const {reviewId, inquiryId, content} = req.body;  //bodyParser가 알아서 읽어 준다. 사실 클라이엔트에서 isDone:false로 자료 넘겨주어야 된다.
 		const userId = req.userId
-		// console.log('reviewId :', reviewId)
-		// console.log('content :', content)
-		// console.log('userId :', userId)
 		const foundUser = await User.findById(userId)
 		const foundUsername = foundUser.name
 		console.log('foundUser, foundUsername:', foundUser, ':',foundUsername)
@@ -19,9 +17,9 @@ replyController.createReply = async (req, res)=>{
 		console.log('새 reply 저장됨:', newReply)
 
 		// user에도 replyIds 배열에 replyId추가
-		foundUser.replyId.push(newReply._id)
-		await foundUser.save
-
+		foundUser.replyIds.push(newReply._id)
+		await foundUser.save()    // save는 안되고 save() 실행해야 됨.
+		console.log('foundUser 변화:',foundUser)
 		// Review를 찾아서, replies 배열에 새로운 replyId 추가
 		if(reviewId){
 			await Review.updateOne(
@@ -31,13 +29,14 @@ replyController.createReply = async (req, res)=>{
 		}
 		// inquiry에 답변한 경우
 		if(inquiryId){
-			await inquiry.updateOne(
+			await Inquiry.updateOne(
 				{ _id: inquiryId },
 				{ $push: { replyIds: newReply._id }}
 			);
 		}
+		console.log('inquiry 변화됨. 직접 살펴볼것')
 
-		res.status(200).json({status:'ok', data: ''})
+		res.status(200).json({status:'ok', data:newReply})
 	} catch(e){
 		res.status(400).json({status:'fail', error:e})
 	}

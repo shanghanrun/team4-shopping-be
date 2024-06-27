@@ -38,7 +38,7 @@ inquiryController.createInquiry=async(req, res)=>{
 inquiryController.getInquiryList=async(req, res)=>{
 	try{
 		console.log('getInquiryList 호출됨')
-		const allInquiries = await Inquiry.find({isDeleted:false}).populate('replyId', '_id author authorId title')   
+		const allInquiries = await Inquiry.find({isDeleted:false}).populate('replyIds', '_id author authorId content')   
 		console.log('allInquiries :', allInquiries)
 		return res.status(200).json({status:'success',data:allInquiries})
 	}catch(e){
