@@ -15,6 +15,7 @@ userRouter.get('/', authController.authenticate, authController.checkAdminPermis
 userRouter.get('/verify-token', authController.verifyToken)
 userRouter.get('/cloud-user-to-json', userController.cloudUser2Json)
 userRouter.get('/json-user-to-cloud', userController.jsonUser2Cloud)
+userRouter.get('/replyChecked',  authController.authenticate, userController.updateUserReplyChecked)
 userRouter.put('/', authController.authenticate, authController.checkAdminPermission, userController.updateUser)
 
 userRouter.put('/viewed', authController.authenticate,userController.updateUserViewed)

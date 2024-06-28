@@ -238,6 +238,25 @@ userController.updateUserShipTo = async(req,res)=>{
 		res.status(400).json({status:'fail', error:e.message})
 	}
 }
+userController.updateUserReplyChecked=async(req,res)=>{
+	try{
+		const userId = req.userId
+		const user = await User.findById(userId)
+		if(!user){
+			return res.status(404).json({ status: 'fail', error: 'User not found' });
+		}
+		if(!user.replyChecked){
+			user.replyChecked = false
+		} else{  //reply를 변경할 때마다 user의 replyChecked를 반대로 만든다.
+			user.replyChecked = !user.replyChecked
+		}
+		await user.save()
+		
+		res.status(200).json({ status: 'success', data:user });
+	}catch(e){
+		res.status(400).json({status:'fail', error:e.message})
+	}
+}
 userController.deleteUserViewed=async(req,res)=>{
 	try{
 		const userId = req.userId

@@ -24,14 +24,20 @@ replyController.createReply = async (req, res)=>{
 		if(reviewId){
 			await Review.updateOne(
 				{ _id: reviewId },
-				{ $push: { replyIds: newReply._id }}
+				{ 
+					$push: { replyIds: newReply._id },
+					$set: { status: 'gotReply'}
+				}
 			);
 		}
 		// inquiry에 답변한 경우
 		if(inquiryId){
 			await Inquiry.updateOne(
 				{ _id: inquiryId },
-				{ $push: { replyIds: newReply._id }}
+				{ 
+					$push: { replyIds: newReply._id },
+					$set: {status: 'gotReply'}
+				},
 			);
 		}
 		console.log('inquiry 변화됨. 직접 살펴볼것')
@@ -53,7 +59,12 @@ replyController.updateReply = async(req, res)=>{
 
 		await Reply.updateOne(
 			{_id: id},
-			{ $set: {content: content}},
+			{ 
+				$set: {
+					content: content,
+					status:'getReply'//사실 이미해서 안해도 된다.
+				}
+			},
 		)
 		res.status(200).json({status:'ok',data:''})
 	}catch(e){

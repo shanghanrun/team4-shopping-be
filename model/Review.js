@@ -12,6 +12,7 @@ const reviewSchema = Schema({
 	content: {type:String, default:""},
 	star: {type:Number, default:0},
 	isDeleted:{type:Boolean, default:false},
+	status:{type:String, default:'noReply'},
 	replyIds:[
 			{ type:mongoose.ObjectId,
 				ref:"Reply"

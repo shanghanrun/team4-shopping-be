@@ -9,6 +9,7 @@ const inquirySchema = Schema({
 	image: {type:String, default:''},
 	content: {type:String, default:""},
 	isDeleted:{type:Boolean, default:false},
+	status:{type:String, default:'noReply'},//'gotReply'
 	replyIds:[
 			{ type:mongoose.ObjectId,
 				ref:"Reply"
