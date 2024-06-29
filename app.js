@@ -7,6 +7,10 @@ const indexRouter = require('./routes/index')
 const app = express()
 
 require('dotenv').config()
+// const corsOptions = {
+//     origin: 'https://https://prismatic-yeot-27799a.netlify.app/api/product',
+// };
+// app.use(cors(corsOptions));
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:false})) //url 인식
 app.use(bodyParser.json()) // req.body가 객체로 인식이 된다.
@@ -22,6 +26,9 @@ mongoose.connect(mongoURI)
 // app.listen(PORT, '0.0.0.0', () => {   //localhost:3000 대신 0.0.0.0:3000으로 리슨하도록 변경
 //   console.log(`Server is running on port ${PORT}`);
 // });
-app.listen(process.env.PORT || 5001, ()=>{   // 로컬로 할 때 이걸로
+app.listen(5001, ()=>{   // 로컬로 할 때 이걸로
 	console.log('Server is on 5001')
 })
+// app.listen(process.env.PORT || 5001, ()=>{   // 로컬로 할 때 이걸로
+// 	console.log('Server is on 5001')
+// })
