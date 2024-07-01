@@ -32,11 +32,10 @@ mongoose.connect(mongoURI)
 	.then(()=>console.log('mongoose connected'))
 	.catch((e)=>console.log("DB connection fail", e.message))
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, '0.0.0.0', () => {   //localhost:3000 대신 0.0.0.0:3000으로 리슨하도록 변경
-  console.log(`Server is running on port ${PORT}`);
-});
-
-// app.listen(process.env.PORT || 5001, ()=>{   // 로컬로 할 때 이걸로
-// 	console.log('Server is on 5001')
-// })
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, '0.0.0.0', () => {   //localhost:3000 대신 0.0.0.0:3000으로 리슨하도록 변경
+//   console.log(`Server is running on port ${PORT}`);
+// });
+app.listen(process.env.PORT || 5001, ()=>{   // 로컬로 할 때 이걸로
+	console.log('Server is on 5001')
+})
