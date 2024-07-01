@@ -8,9 +8,19 @@ const app = express()
 
 require('dotenv').config()
 // const corsOptions = {
-//     origin: 'https://https://prismatic-yeot-27799a.netlify.app/api/product',
+//     origin: 'https://prismatic-yeot-27799a.netlify.app',
 // };
 // app.use(cors(corsOptions));
+
+// app.use(cors({
+//   origin: [
+// 	'https://prismatic-yeot-27799a.netlify.app', 
+// 	'https://prismatic-yeot-27799a.netlify.app/api', 
+// 	'https://prismatic-yeot-27799a.netlify.app/api/product', 
+// 	'http://localhost:3000'
+// ],
+//   optionsSuccessStatus: 200
+// }));
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:false})) //url 인식
 app.use(bodyParser.json()) // req.body가 객체로 인식이 된다.
@@ -22,13 +32,11 @@ mongoose.connect(mongoURI)
 	.then(()=>console.log('mongoose connected'))
 	.catch((e)=>console.log("DB connection fail", e.message))
 
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, '0.0.0.0', () => {   //localhost:3000 대신 0.0.0.0:3000으로 리슨하도록 변경
-//   console.log(`Server is running on port ${PORT}`);
-// });
-app.listen(5001, ()=>{   // 로컬로 할 때 이걸로
-	console.log('Server is on 5001')
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, '0.0.0.0', () => {   //localhost:3000 대신 0.0.0.0:3000으로 리슨하도록 변경
+  console.log(`Server is running on port ${PORT}`);
+});
+
 // app.listen(process.env.PORT || 5001, ()=>{   // 로컬로 할 때 이걸로
 // 	console.log('Server is on 5001')
 // })
