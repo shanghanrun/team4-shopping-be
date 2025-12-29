@@ -1,39 +1,12 @@
 [
   {
-    "_id": "665423013d81f02f29d66a2e",
-    "sku": "sku0001",
-    "name": "브로드리 앙글레즈 스커트 ",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
-    "price": 24500,
-    "category": [
-      "skirt",
-      "shorts"
-    ],
-    "description": "펀칭 자수로 장식된 코튼 소재의 미디 스커트. 하이웨이스트. 신축성 허릿단. 부분 안감 부착.",
-    "stock": {
-      "s": 2,
-      "m": 49,
-      "l": 34
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-06-12T06:06:57.148Z",
-    "updatedAt": "2024-06-23T08:09:20.802Z",
-    "__v": 0,
-    "onePlus": false,
-    "freeDelivery": true,
-    "salePercent": 30,
-    "salePrice": 17150,
-    "brand": "hm",
-    "kind": "clothes",
-    "soldCount": 20
-  },
-  {
     "_id": "6654511fc454f7966b845a1d",
     "sku": "sku0018",
     "name": "루즈핏 프린트 슬리브리스 탑",
     "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3f%2Fbe%2F3fbe6beec55b7bdfcbf508f6765410d4412273eb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_printed%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
     "price": 56000,
+    "salePrice": 28000,
+    "brand": "hm",
     "category": [
       "top"
     ],
@@ -44,16 +17,40 @@
     },
     "status": "active",
     "isDeleted": false,
-    "createdAt": "2024-05-27T09:23:43.511Z",
-    "updatedAt": "2024-06-23T08:20:32.698Z",
-    "__v": 0,
-    "freeDelivery": false,
+    "soldCount": 13,
     "onePlus": false,
     "salePercent": 50,
-    "salePrice": 28000,
-    "soldCount": 13,
-    "brand": "hm",
-    "kind": "clothes"
+    "freeDelivery": false,
+    "kind": "clothes",
+    "createdAt": "2024-05-27T09:23:43.511Z",
+    "updatedAt": "2024-06-23T08:20:32.698Z",
+    "__v": 0
+  },
+  {
+    "_id": "6658083402fdfc7745702b83",
+    "sku": "sku0032",
+    "name": "dog",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717045235/qdnq7j2a9nij5g92rtjw.png",
+    "price": 23000,
+    "salePrice": 0,
+    "brand": "우리돼지농원",
+    "category": [
+      "animal"
+    ],
+    "description": "멍멍멍~~",
+    "stock": {
+      "live": 41
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "animal",
+    "createdAt": "2024-05-30T05:01:40.755Z",
+    "updatedAt": "2024-06-20T06:57:51.195Z",
+    "__v": 0
   },
   {
     "_id": "6654469b8dc4269f917b3381",
@@ -61,6 +58,8 @@
     "name": "패턴 비치 타월",
     "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F11%2Fdb%2F11dbf3d454094ae066b4d4c432c712abe228f09b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BENVIRONMENT%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
     "price": 30000,
+    "salePrice": 0,
+    "brand": "hm",
     "category": [
       "towel"
     ],
@@ -72,63 +71,69 @@
     },
     "status": "active",
     "isDeleted": true,
-    "brand": "hm",
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
     "kind": "home",
     "createdAt": "2024-05-27T08:38:52.044Z",
     "updatedAt": "2024-06-09T02:36:41.215Z",
     "__v": 0
   },
   {
-    "_id": "6654240e3d81f02f29d66a36",
-    "sku": "sku0015",
-    "name": "프레이 에지 버뮤다 쇼츠",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa6%2F21%2Fa621f64c7ae17ded845a347dadf9b72c53af5cec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "price": 40000,
+    "_id": "6654291b76f156f779f23b8c",
+    "sku": "sku0016",
+    "name": "코튼 플라운스 드레스",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F67%2F6d%2F676ddf6768a24c2b06237aad8612534e820f31ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "price": 56000,
+    "salePrice": 47600,
+    "brand": "hm",
     "category": [
+      "top",
+      "dress"
     ],
-    "description": "코튼 트윌 소재의 루즈핏 5부 반바지. 레귤러 웨이스트. 밑위가 긴 디자인. 지퍼와 버튼 클로징. 앞뒷면 포켓. 올이 풀린 듯한 포켓 입구와 아랫단.",
+    "description": "코튼 소재의 슬리브리스 미니 원피스. 라운드넥. 피트되는 보디스. 어깨 부분이 와이드한 플라운스로 장식됨. 목 뒷면에 키홀 트임과 버튼이 있음. 허리 부분이 가늘게 밴딩처리됨. 세미 플레어 라인으로 마감된 티어드 스타일의 하단. 플라운스와 하단이 스캘럽트 라인으로 단처리됨. 안감 부착.",
     "stock": {
-      "s": 1,
-      "m": 26,
-      "l": 20
-    },
-    "status": null,
-    "isDeleted": false,
-    "createdAt": "2024-05-27T06:11:26.887Z",
-    "updatedAt": "2024-06-23T08:09:20.808Z",
-    "__v": 0,
-    "brand": "",
-    "freeDelivery": false,
-    "kind": "home",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 40000,
-    "soldCount": 5
-  },
-  {
-    "_id": "665696d96deab5519a841c16",
-    "sku": "sku0030",
-    "name": "bee",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716950734/wpby03pemtt4fu7eendm.png",
-    "price": 23450,
-    "category": [
-      "animal"
-    ],
-    "description": "1223  비비비비",
-    "stock": {
-      "live": 1,
-      "dead": 0
+      "xs": 43,
+      "s": 37,
+      "m": 46
     },
     "status": "active",
     "isDeleted": false,
-    "brand": "",
-    "kind": "animal",
+    "soldCount": 0,
+    "onePlus": true,
+    "salePercent": 15,
+    "freeDelivery": false,
+    "kind": "clothes",
+    "createdAt": "2024-05-27T06:32:59.940Z",
+    "updatedAt": "2024-06-30T13:07:57.137Z",
+    "__v": 0
+  },
+  {
+    "_id": "66610a1d8c5328ea84f0c96f",
+    "sku": "sku2001",
+    "name": "벨티드 셔츠 드레스",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717635595/nl1vkalzxxsxucleptyx.webp",
+    "price": 34999,
+    "salePrice": 0,
+    "brand": "hm",
+    "category": [
+      "dress"
+    ],
+    "description": "test하려 와서 만든 품목",
+    "stock": {
+      "s": 29,
+      "m": 3
+    },
+    "status": "active",
+    "isDeleted": true,
+    "soldCount": 0,
     "onePlus": false,
     "salePercent": 0,
-    "salePrice": 23450,
-    "soldCount": 2,
-    "createdAt": "2024-05-29T02:45:45.154Z",
-    "updatedAt": "2024-06-14T05:02:11.437Z",
+    "freeDelivery": false,
+    "kind": "clothes",
+    "createdAt": "2024-06-06T01:00:13.338Z",
+    "updatedAt": "2024-06-06T15:35:47.076Z",
     "__v": 0
   },
   {
@@ -137,6 +142,8 @@
     "name": "리넨 블렌드 풀온 팬츠",
     "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb2%2F6d%2Fb26d5efd7e1cf7c705791c187295c6cbe2565742.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
     "price": 45000,
+    "salePrice": 0,
+    "brand": "hm",
     "category": [
       "pants"
     ],
@@ -147,165 +154,14 @@
     },
     "status": "active",
     "isDeleted": false,
-    "brand": "hm",
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
     "kind": "clothes",
     "createdAt": "2024-05-27T08:38:52.042Z",
     "updatedAt": "2024-05-28T09:05:09.201Z",
-    "__v": 0,
-    "salePrice": 0
-  },
-  {
-    "_id": "6654469b8dc4269f917b337c",
-    "sku": "sku0005",
-    "name": "쇼트 슬리브 데님 셔츠",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6a%2F24%2F6a24b142ddaa8a7db0e478e2a87bbf41379c5d81.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "price": 25600,
-    "category": [
-      "shirt"
-    ],
-    "description": "탄탄한 데님 소재의 크롭트 셔츠. 칼라와 앞면 버튼, 뒷면 요크가 있음. 반소매. 가슴 패치포켓.",
-    "stock": {
-      "s": 30,
-      "m": 69,
-      "l": 40
-    },
-    "status": "active",
-    "isDeleted": false,
-    "brand": "hm",
-    "kind": "clothes",
-    "createdAt": "2024-05-27T08:38:52.044Z",
-    "updatedAt": "2024-05-28T09:05:09.215Z",
     "__v": 0
-  },
-  {
-    "_id": "6654291b76f156f779f23b8c",
-    "sku": "sku0016",
-    "name": "코튼 플라운스 드레스",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F67%2F6d%2F676ddf6768a24c2b06237aad8612534e820f31ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "price": 56000,
-    "category": [
-      "top",
-      "dress"
-    ],
-    "description": "코튼 소재의 슬리브리스 미니 원피스. 라운드넥. 피트되는 보디스. 어깨 부분이 와이드한 플라운스로 장식됨. 목 뒷면에 키홀 트임과 버튼이 있음. 허리 부분이 가늘게 밴딩처리됨. 세미 플레어 라인으로 마감된 티어드 스타일의 하단. 플라운스와 하단이 스캘럽트 라인으로 단처리됨. 안감 부착.",
-    "stock": {
-      "xs": 48,
-      "s": 37,
-      "m": 46
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-05-27T06:32:59.940Z",
-    "updatedAt": "2024-06-20T06:40:27.861Z",
-    "__v": 0,
-    "freeDelivery": false,
-    "brand": "hm",
-    "kind": "clothes",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
-  },
-  {
-    "_id": "6654291b76f156f779f23b8d",
-    "sku": "sku0017",
-    "name": "A라인 미니 스커트",
-    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F85%2F74%2F8574007b1c3ae0a97fc65476d0d509e5131be27b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
-    "price": 34000,
-    "category": [
-      "skirt"
-    ],
-    "description": "리넨과 비스코스가 혼방된 가벼운 우븐 소재의 A라인 미니 스커트. 하이웨이스트. 드로스트링이 있는 허릿단. 스트레이트 헴라인. 안감 부착.",
-    "stock": {
-      "s": 33,
-      "m": 30,
-      "l": 20
-    },
-    "status": "active",
-    "isDeleted": false,
-    "brand": "hm",
-    "kind": "clothes",
-    "createdAt": "2024-05-27T06:32:59.944Z",
-    "updatedAt": "2024-06-04T03:28:04.160Z",
-    "__v": 0
-  },
-  {
-    "_id": "6654240e3d81f02f29d66a35",
-    "sku": "sku0014",
-    "name": "미디 스커트",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fae%2Fde%2Faede7b99fbd6228ab20f0879374842bd9310ee1a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "price": 34900,
-    "category": [
-      "skirt"
-    ],
-    "description": "우븐 소재의 하이웨이스트 미디 원피스. 신축성 허릿단.",
-    "stock": {
-      "s": 34,
-      "m": 28,
-      "l": 20
-    },
-    "status": null,
-    "isDeleted": false,
-    "brand": "hm",
-    "kind": "clothes",
-    "createdAt": "2024-05-27T06:11:26.886Z",
-    "updatedAt": "2024-06-04T03:02:35.632Z",
-    "__v": 0
-  },
-  {
-    "_id": "6654511fc454f7966b845a1e",
-    "sku": "sku0019",
-    "name": "버튼 디테일 울 재킷",
-    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F79%2F75%2F797554989d373ceba26bc076c099f742c1f65d0b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
-    "price": 34000,
-    "category": [
-      "jacket"
-    ],
-    "description": "노치트 라펠이 있는 울 트윌 소재의 싱글 브레스티드 재킷. 어깨 앞면 솔기. 라펠과 앞면에 버튼홀이 있음. 커버드 커프 링크로 다양한 스타일 연출 가능. 오버사이즈 실루엣. 드롭 숄더. 소맷단과 뒷트임 부분에 버튼이 있음. 가슴 웰트포켓, 앞면 플랩포켓. 내부 웰트포켓 2개 중 1개에 버튼이 있음. 앞면이 조금 더 긴 디자인. 디자이너의 로고가 새겨진 버튼 사용. 한쪽 소맷단에 디자이너의 로고 라벨이 부착됨. 안감 부착.",
-    "stock": {
-      "s": 48,
-      "m": 39
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-05-27T09:23:43.512Z",
-    "updatedAt": "2024-06-20T07:38:23.409Z",
-    "__v": 0,
-    "brand": "hm",
-    "freeDelivery": false,
-    "kind": "clothes",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
-  },
-  {
-    "_id": "6654469b8dc4269f917b337e",
-    "sku": "sku0007",
-    "name": "아쿠아 샌들",
-    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb0%2F65%2Fb0655ed11483e4ba08be5d700db4edc6e1d76e05.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
-    "price": 12000,
-    "category": [
-      "sendal"
-    ],
-    "description": "그로그랭과 스쿠버 수트 소재가 믹스된 샌들. 프린트가 있는 그로그랭 스트랩. 테이프 클로저로 핏 조절 가능한 발등 스트랩과 발목 스트랩. 바닥면에 홈이 파인 입체적인 밑창. 밑창 높이 2.5cm.",
-    "stock": {
-      "s": 28,
-      "m": 70,
-      "l": 42
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-05-27T08:38:52.044Z",
-    "updatedAt": "2024-06-20T04:20:54.224Z",
-    "__v": 0,
-    "brand": "hm",
-    "freeDelivery": false,
-    "kind": "clothes",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
   },
   {
     "_id": "6654469b8dc4269f917b337d",
@@ -313,6 +169,8 @@
     "name": "스모킹 탑 드레스",
     "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8b%2F23%2F8b235f73ce631c59184a15348492bd1c3de9da15.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
     "price": 58000,
+    "salePrice": 49300,
+    "brand": "hm",
     "category": [
       "top",
       "dress"
@@ -325,346 +183,41 @@
     },
     "status": "active",
     "isDeleted": false,
-    "createdAt": "2024-05-27T08:38:52.044Z",
-    "updatedAt": "2024-06-20T04:20:54.215Z",
-    "__v": 0,
     "soldCount": 45,
-    "brand": "hm",
+    "onePlus": false,
+    "salePercent": 15,
     "freeDelivery": false,
     "kind": "clothes",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0
-  },
-  {
-    "_id": "6654469b8dc4269f917b337b",
-    "sku": "sku0004",
-    "name": "텍스처 니트 랩스커트",
-    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F8f%2F8e%2F8f8ed9d7122b7e40065acbd8031dedd15ce4f2ab.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
-    "price": 35000,
-    "category": [
-      "skirt"
-    ],
-    "description": "텍스처가 있는 니트 소재의 미디 스커트. 허리 뒷면에 밴딩이 내장됨. 랩스타일로 고정된 앞면에 플리츠를 잡아 가벼운 드레이핑 효과를 준 디자인.",
-    "stock": {
-      "m": 49,
-      "xl": 37
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-05-27T08:38:52.043Z",
-    "updatedAt": "2024-06-18T12:54:37.805Z",
-    "__v": 0,
-    "freeDelivery": false,
-    "brand": "hm",
-    "kind": "clothes",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 56
-  },
-  {
-    "_id": "6654469b8dc4269f917b3380",
-    "sku": "sku0009",
-    "name": "버터플라이 슬리브 탑",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F68%2F8d%2F688de7d317c0645483b547d7721775353b3af2ee.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "price": 43000,
-    "category": [
-      "top"
-    ],
-    "description": "부드러운 코튼 저지 소재의 라운드넥 탑. 버터플라이 소매.",
-    "stock": {
-      "s": 29,
-      "m": 70,
-      "l": 44
-    },
-    "status": "active",
-    "isDeleted": false,
     "createdAt": "2024-05-27T08:38:52.044Z",
-    "updatedAt": "2024-06-20T04:26:48.758Z",
-    "__v": 0,
-    "soldCount": 87,
-    "brand": "hm",
-    "freeDelivery": false,
-    "kind": "clothes",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0
-  },
-  {
-    "_id": "6655841e1e9fc1dfb5de4991",
-    "sku": "sku0020",
-    "name": "한우",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716880387/wmxddmsrdvfa7wgqdhrg.png",
-    "price": 20,
-    "category": [
-      "food"
-    ],
-    "description": "음메~~~ 미원에 저 한마리 들어간데요",
-    "stock": {
-      "dead": 34
-    },
-    "status": "active",
-    "isDeleted": false,
-    "brand": "한한우",
-    "kind": "animal",
-    "createdAt": "2024-05-28T07:13:34.343Z",
-    "updatedAt": "2024-05-30T05:04:08.801Z",
+    "updatedAt": "2024-06-29T05:16:09.285Z",
     "__v": 0
-  },
-  {
-    "_id": "66568ec76deab5519a841b5f",
-    "sku": "sku0023",
-    "name": "블루 탑 블루 스커트 세트",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716948665/obxg4sbmuqw8erijlcwg.png",
-    "price": 240,
-    "category": [
-      "top",
-      "dress"
-    ],
-    "description": "사이즈가 작게 나옵니다.",
-    "stock": {
-      "m": 32
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-05-29T02:11:19.897Z",
-    "updatedAt": "2024-06-24T07:26:26.379Z",
-    "__v": 0,
-    "brand": "핑크라인",
-    "freeDelivery": false,
-    "kind": "clothes",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
   },
   {
     "_id": "66568f066deab5519a841b65",
     "sku": "sku0024",
     "name": "상큼 이어링",
     "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716948729/n1bsnussp2jahudpcy3f.png",
-    "price": 5670,
+    "price": 56700,
+    "salePrice": 39690,
+    "brand": "핑크라인",
     "category": [
       "earring"
     ],
     "description": "옷 파는 것이 아니라 이어링입니다. 잘못 주문하시는 분들이 많아서....",
     "stock": {
-      "metal":30,
+      "metal": 30,
       "gold": 20
     },
     "status": "active",
     "isDeleted": false,
-    "brand": "핑크라인",
+    "soldCount": 100,
+    "onePlus": true,
+    "salePercent": 30,
+    "freeDelivery": true,
     "kind": "jewelry",
     "createdAt": "2024-06-12T02:12:22.946Z",
-    "updatedAt": "2024-06-12T03:55:46.053Z",
-    "__v": 0,
-    "soldCount": 100
-  },
-  {
-    "_id": "66568bf46deab5519a841b20",
-    "sku": "sku0022",
-    "name": "레드 드레스",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716947934/ki6nbx8nvztuxsf8c9vh.png",
-    "price": 5000,
-    "category": [
-      "top",
-      "dress"
-    ],
-    "description": "사이즈가 좀 작게 나옵니다~~",
-    "stock": {
-      "m": 37
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-05-29T01:59:16.185Z",
-    "updatedAt": "2024-06-20T05:01:22.855Z",
-    "__v": 0,
-    "brand": "Hot-Pink",
-    "freeDelivery": false,
-    "kind": "clothes",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
-  },
-  {
-    "_id": "665697036deab5519a841c1c",
-    "sku": "sku0031",
-    "name": "cat",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716950777/markmii0owq6rxceyxg6.png",
-    "price": 23340,
-    "category": [
-      "animal"
-    ],
-    "description": "냐옹.. meo meo ",
-    "stock": {
-      "live": 56,
-      "dead": 40
-    },
-    "status": "active",
-    "isDeleted": false,
-    "brand": "동물농장",
-    "kind": "animal",
-    "createdAt": "2024-05-29T02:46:27.336Z",
-    "updatedAt": "2024-05-30T05:02:47.359Z",
+    "updatedAt": "2024-06-29T05:18:50.373Z",
     "__v": 0
-  },
-  {
-    "_id": "6656856b6deab5519a841afd",
-    "sku": "sku0021",
-    "name": "그럴려고(미원)",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716946200/trbfkvhud5gzpkktk2x8.png",
-    "price": 3000,
-    "category": [
-      "food"
-    ],
-    "description": "임시자료입니다.",
-    "stock": {
-      "only One Choice": 23
-    },
-    "status": "active",
-    "isDeleted": false,
-    "brand": "미원",
-    "kind": "etc",
-    "createdAt": "2024-05-29T01:31:23.167Z",
-    "updatedAt": "2024-05-30T05:04:34.205Z",
-    "__v": 0
-  },
-  {
-    "_id": "6654469b8dc4269f917b337f",
-    "sku": "sku0008",
-    "name": "프릴 디테일 리브드 티셔츠",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F1a%2Ff0%2F1af0a2653b07fdd28f31fc6560d6d55f2ee65a50.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "price": 32000,
-    "category": [
-      "shirt"
-    ],
-    "description": "프린트 패턴이 있는 리브드 저지 소재의 티셔츠. 피코 스타일로 단처리된 라운드넥. 어깨 부분에 프릴 장식이 있음.",
-    "stock": {
-      "s": 30,
-      "m": 70,
-      "l": 43
-    },
-    "status": "active",
-    "isDeleted": false,
-    "brand": "hm",
-    "kind": "clothes",
-    "createdAt": "2024-05-27T08:38:52.044Z",
-    "updatedAt": "2024-05-27T08:38:52.044Z",
-    "__v": 0,
-    "soldCount": 72
-  },
-  {
-    "_id": "6658083402fdfc7745702b83",
-    "sku": "sku0032",
-    "name": "dog",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717045235/qdnq7j2a9nij5g92rtjw.png",
-    "price": 23000,
-    "category": [
-      "animal"
-    ],
-    "description": "멍멍멍~~",
-    "stock": {
-      "live": 41
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-05-30T05:01:40.755Z",
-    "updatedAt": "2024-06-20T06:57:51.195Z",
-    "__v": 0,
-    "brand": "우리돼지농원",
-    "freeDelivery": false,
-    "kind": "animal",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
-  },
-  {
-    "_id": "665d604a0610108d5c3dc77e",
-    "sku": "sku0025",
-    "name": "LG전자 오브제컬렉션 네이처 S834MTE10 (클레이민트+베이지) 냉장고",
-    "image": "https://gdimg.gmarket.co.kr/3638459189/still/600?ver=1710819432",
-    "price": 1019340,
-    "category": [
-      "가전",
-      "냉장고"
-    ],
-    "description": "제조사:LG전자 등록년월: 2022년 06월  소비전력: 52.3kWh(월)  에너지: 2등급",
-    "stock": {
-      "small": 46,
-      "big": 40
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-06-03T06:18:50.631Z",
-    "updatedAt": "2024-06-20T05:47:06.437Z",
-    "__v": 0,
-    "soldCount": 33,
-    "brand": "LG",
-    "freeDelivery": false,
-    "kind": "it",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0
-  },
-  {
-    "_id": "665d604a0610108d5c3dc781",
-    "sku": "sku0028",
-    "name": "LG 올레드 tv evo 65인치 (163cm) OLED65G4KNA",
-    "image": "http://image.auction.co.kr/itemimage/41/2d/df/412ddf56f6.jpg",
-    "price": 294580,
-    "category": [
-      "가전",
-      "tv"
-    ],
-    "description": "백라이트 없이 스스로 빛나는 올레드. ",
-    "stock": {
-      "small": 44,
-      "huge": 42
-    },
-    "status": "active",
-    "isDeleted": false,
-    "createdAt": "2024-06-03T06:18:50.634Z",
-    "updatedAt": "2024-06-20T06:04:26.864Z",
-    "__v": 0,
-    "freeDelivery": false,
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0,
-    "brand": "LG",
-    "kind": "it"
-  },
-  {
-    "_id": "665d604a0610108d5c3dc782",
-    "sku": "sku0029",
-    "name": "삼성 tv KQ75QND85BFXKR Neo QLED TV 4K",
-    "image": "http://image.auction.co.kr/itemimage/43/8a/00/438a009876.jpg",
-    "price": 3650000,
-    "category": [
-      "가전",
-      "tv"
-    ],
-    "description": "초대형 화면으로 즐기는 crystal UHD",
-    "stock": {
-      "small": 48,
-      "big": 43
-    },
-    "status": "active",
-    "isDeleted": false,
-    "brand": "samsung",
-    "kind": "it",
-    "createdAt": "2024-06-03T06:18:50.634Z",
-    "updatedAt": "2024-06-18T09:27:51.840Z",
-    "__v": 0,
-    "freeDelivery": false,
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
   },
   {
     "_id": "665d657f3df06ab3da76ee3c",
@@ -672,6 +225,8 @@
     "name": "LG 디오스 얼음정수기냉장고 오브제컬렉션 J814MHH12 [810L]",
     "image": "https://thumb.cjonstyle.net/unsafe/fit-in/470x470/itemimage.cjonstyle.net/goods_images/20/609/2004789609L.jpg?timestamp=20240508160822",
     "price": 1872770,
+    "salePrice": 0,
+    "brand": "",
     "category": [
       "가전",
       "냉장고"
@@ -683,8 +238,67 @@
     },
     "status": "active",
     "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "women",
     "createdAt": "2024-06-03T06:41:03.997Z",
     "updatedAt": "2024-06-03T06:41:03.997Z",
+    "__v": 0
+  },
+  {
+    "_id": "665d6a295a49c32cbe7fc193",
+    "sku": "sku0033",
+    "name": "바니랜드 출동 구조대 장난감 세트",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717398040/fijbtpebczcax6xutifi.png",
+    "price": 30000,
+    "salePrice": 0,
+    "brand": "키즈랜드",
+    "category": [
+      "자동차"
+    ],
+    "description": "어린이날 최고의 선물",
+    "stock": {
+      "only One Choice": 44
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": true,
+    "salePercent": 0,
+    "freeDelivery": true,
+    "kind": "etc",
+    "createdAt": "2024-06-03T07:00:57.974Z",
+    "updatedAt": "2024-06-29T04:48:08.315Z",
+    "__v": 0
+  },
+  {
+    "_id": "6654469b8dc4269f917b337f",
+    "sku": "sku0008",
+    "name": "프릴 디테일 리브드 티셔츠",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F1a%2Ff0%2F1af0a2653b07fdd28f31fc6560d6d55f2ee65a50.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "price": 32000,
+    "salePrice": 27200,
+    "brand": "hm",
+    "category": [
+      "shirt"
+    ],
+    "description": "프린트 패턴이 있는 리브드 저지 소재의 티셔츠. 피코 스타일로 단처리된 라운드넥. 어깨 부분에 프릴 장식이 있음.",
+    "stock": {
+      "s": 30,
+      "m": 70,
+      "l": 43
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 72,
+    "onePlus": false,
+    "salePercent": 15,
+    "freeDelivery": true,
+    "kind": "clothes",
+    "createdAt": "2024-05-27T08:38:52.044Z",
+    "updatedAt": "2024-06-29T05:19:07.790Z",
     "__v": 0
   },
   {
@@ -693,6 +307,8 @@
     "name": "삼성전자 RB30R4051B1 냉장고",
     "image": "https://img.danawa.com/prod_img/500000/547/455/img/9455547_3.jpg?shrink=330:*&_v=20240419142005",
     "price": 442910,
+    "salePrice": 0,
+    "brand": "samsung",
     "category": [
       "가전",
       "냉장고"
@@ -704,36 +320,483 @@
     },
     "status": "active",
     "isDeleted": false,
-    "createdAt": "2024-06-03T06:41:03.996Z",
-    "updatedAt": "2024-06-20T07:38:23.403Z",
-    "__v": 0,
-    "brand": "samsung",
-    "freeDelivery": false,
-    "kind": "it",
+    "soldCount": 0,
     "onePlus": false,
     "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
+    "freeDelivery": false,
+    "kind": "it",
+    "createdAt": "2024-06-03T06:41:03.996Z",
+    "updatedAt": "2024-06-20T07:38:23.403Z",
+    "__v": 0
   },
   {
-    "_id": "665d6a295a49c32cbe7fc193",
-    "sku": "sku0033",
-    "name": "바니랜드 출동 구조대 장난감 세트",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717398040/fijbtpebczcax6xutifi.png",
-    "price": 30000,
+    "_id": "6661cf0c8c5328ea84f0caf8",
+    "sku": "sku2002",
+    "name": "선재 체육복",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1719636746/jmzav9umbg7azec2tjco.jpg",
+    "price": 145678,
+    "salePrice": 0.7,
+    "brand": "hm",
     "category": [
-      "자동차"
+      "top",
+      "pants"
     ],
-    "description": "어린이날 최고의 선물",
+    "description": "화제의 선재 체육복. 품절 임박!!",
     "stock": {
-      "only One Choice": 44
+      "s": 45,
+      "m": 34
     },
     "status": "active",
     "isDeleted": false,
-    "brand": "키즈랜드",
+    "soldCount": 82,
+    "onePlus": false,
+    "salePercent": 30,
+    "freeDelivery": true,
+    "kind": "clothes",
+    "createdAt": "2024-06-06T15:00:28.212Z",
+    "updatedAt": "2024-06-29T13:21:53.718Z",
+    "__v": 0
+  },
+  {
+    "_id": "66568bf46deab5519a841b20",
+    "sku": "sku0022",
+    "name": "레드 드레스",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716947934/ki6nbx8nvztuxsf8c9vh.png",
+    "price": 5000,
+    "salePrice": 0,
+    "brand": "Hot-Pink",
+    "category": [
+      "top",
+      "dress"
+    ],
+    "description": "사이즈가 좀 작게 나옵니다~~",
+    "stock": {
+      "m": 37
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "clothes",
+    "createdAt": "2024-05-29T01:59:16.185Z",
+    "updatedAt": "2024-06-20T05:01:22.855Z",
+    "__v": 0
+  },
+  {
+    "_id": "665d604a0610108d5c3dc781",
+    "sku": "sku0028",
+    "name": "LG 올레드 tv evo 65인치 (163cm) OLED65G4KNA",
+    "image": "http://image.auction.co.kr/itemimage/41/2d/df/412ddf56f6.jpg",
+    "price": 294580,
+    "salePrice": 0,
+    "brand": "LG",
+    "category": [
+      "가전",
+      "tv"
+    ],
+    "description": "백라이트 없이 스스로 빛나는 올레드. ",
+    "stock": {
+      "small": 44,
+      "huge": 42
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "it",
+    "createdAt": "2024-06-03T06:18:50.634Z",
+    "updatedAt": "2024-06-20T06:04:26.864Z",
+    "__v": 0
+  },
+  {
+    "_id": "665d604a0610108d5c3dc782",
+    "sku": "sku0029",
+    "name": "삼성 tv KQ75QND85BFXKR Neo QLED TV 4K",
+    "image": "http://image.auction.co.kr/itemimage/43/8a/00/438a009876.jpg",
+    "price": 3650000,
+    "salePrice": 0,
+    "brand": "samsung",
+    "category": [
+      "가전",
+      "tv"
+    ],
+    "description": "초대형 화면으로 즐기는 crystal UHD",
+    "stock": {
+      "small": 48,
+      "big": 43
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "it",
+    "createdAt": "2024-06-03T06:18:50.634Z",
+    "updatedAt": "2024-06-18T09:27:51.840Z",
+    "__v": 0
+  },
+  {
+    "_id": "6672910065562d5275064c9c",
+    "sku": "sku014",
+    "name": "장원영 진주목걸이",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1719637846/awsqbqivagprlilt11yd.jpg",
+    "price": 566000,
+    "salePrice": 283000,
+    "brand": "CJ",
+    "category": [
+      "top",
+      "necklace"
+    ],
+    "description": "화재의 장원영 진주목걸이\n100% 자연산",
+    "stock": {
+      "purl": 23
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 120,
+    "onePlus": true,
+    "salePercent": 50,
+    "freeDelivery": false,
+    "kind": "jewelry",
+    "createdAt": "2024-06-19T08:04:16.831Z",
+    "updatedAt": "2024-06-29T05:11:43.096Z",
+    "__v": 0
+  },
+  {
+    "_id": "665696d96deab5519a841c16",
+    "sku": "sku0030",
+    "name": "bee",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716950734/wpby03pemtt4fu7eendm.png",
+    "price": 23450,
+    "salePrice": 16415,
+    "brand": "",
+    "category": [
+      "animal"
+    ],
+    "description": "1223  비비비비",
+    "stock": {
+      "live": 1,
+      "dead": 0
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 2,
+    "onePlus": false,
+    "salePercent": 30,
+    "freeDelivery": false,
+    "kind": "animal",
+    "createdAt": "2024-05-29T02:45:45.154Z",
+    "updatedAt": "2024-06-29T04:38:58.130Z",
+    "__v": 0
+  },
+  {
+    "_id": "6654291b76f156f779f23b8d",
+    "sku": "sku0017",
+    "name": "A라인 미니 스커트",
+    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F85%2F74%2F8574007b1c3ae0a97fc65476d0d509e5131be27b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    "price": 34000,
+    "salePrice": 23800,
+    "brand": "hm",
+    "category": [
+      "skirt"
+    ],
+    "description": "리넨과 비스코스가 혼방된 가벼운 우븐 소재의 A라인 미니 스커트. 하이웨이스트. 드로스트링이 있는 허릿단. 스트레이트 헴라인. 안감 부착.",
+    "stock": {
+      "s": 33,
+      "m": 30,
+      "l": 20
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 30,
+    "freeDelivery": true,
+    "kind": "clothes",
+    "createdAt": "2024-05-27T06:32:59.944Z",
+    "updatedAt": "2024-06-29T05:17:05.381Z",
+    "__v": 0
+  },
+  {
+    "_id": "6654469b8dc4269f917b337c",
+    "sku": "sku0005",
+    "name": "쇼트 슬리브 데님 셔츠",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6a%2F24%2F6a24b142ddaa8a7db0e478e2a87bbf41379c5d81.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "price": 25600,
+    "salePrice": 0,
+    "brand": "hm",
+    "category": [
+      "shirt"
+    ],
+    "description": "탄탄한 데님 소재의 크롭트 셔츠. 칼라와 앞면 버튼, 뒷면 요크가 있음. 반소매. 가슴 패치포켓.",
+    "stock": {
+      "s": 30,
+      "m": 69,
+      "l": 40
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "clothes",
+    "createdAt": "2024-05-27T08:38:52.044Z",
+    "updatedAt": "2024-05-28T09:05:09.215Z",
+    "__v": 0
+  },
+  {
+    "_id": "665423013d81f02f29d66a2e",
+    "sku": "sku0001",
+    "name": "브로드리 앙글레즈 스커트 ",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716789999/cm5eg67k9wx8k2yhgsro.jpg",
+    "price": 24500,
+    "salePrice": 17150,
+    "brand": "hm",
+    "category": [
+      "skirt",
+      "shorts"
+    ],
+    "description": "펀칭 자수로 장식된 코튼 소재의 미디 스커트. 하이웨이스트. 신축성 허릿단. 부분 안감 부착.",
+    "stock": {
+      "s": 2,
+      "m": 49,
+      "l": 34
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 20,
+    "onePlus": false,
+    "salePercent": 30,
+    "freeDelivery": true,
+    "kind": "clothes",
+    "createdAt": "2024-06-12T06:06:57.148Z",
+    "updatedAt": "2024-06-23T08:09:20.802Z",
+    "__v": 0
+  },
+  {
+    "_id": "6656856b6deab5519a841afd",
+    "sku": "sku0021",
+    "name": "IVE 앨범",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1719636400/kgwpgxd4qqilnba7jnis.jpg",
+    "price": 100000,
+    "salePrice": 85000,
+    "brand": "미원",
+    "category": [
+      "food",
+      "etc"
+    ],
+    "description": "음반 및 사진",
+    "stock": {
+      "only One Choice": 23
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 15,
+    "freeDelivery": true,
     "kind": "etc",
-    "createdAt": "2024-06-03T07:00:57.974Z",
-    "updatedAt": "2024-06-05T05:14:13.795Z",
+    "createdAt": "2024-05-29T01:31:23.167Z",
+    "updatedAt": "2024-06-29T13:43:51.498Z",
+    "__v": 0
+  },
+  {
+    "_id": "665d604a0610108d5c3dc77e",
+    "sku": "sku0025",
+    "name": "LG전자 오브제컬렉션 네이처 S834MTE10 (클레이민트+베이지) 냉장고",
+    "image": "https://gdimg.gmarket.co.kr/3638459189/still/600?ver=1710819432",
+    "price": 1019340,
+    "salePrice": 0,
+    "brand": "LG",
+    "category": [
+      "가전",
+      "냉장고"
+    ],
+    "description": "제조사:LG전자 등록년월: 2022년 06월  소비전력: 52.3kWh(월)  에너지: 2등급",
+    "stock": {
+      "small": 46,
+      "big": 40
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 33,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "it",
+    "createdAt": "2024-06-03T06:18:50.631Z",
+    "updatedAt": "2024-06-20T05:47:06.437Z",
+    "__v": 0
+  },
+  {
+    "_id": "66728e968a7e2f4b7eabd03c",
+    "sku": "sku012",
+    "name": "천국 하이힐",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1719637516/l2oohdhbtl5ewwzuwsd9.webp",
+    "price": 34550,
+    "salePrice": 24185,
+    "brand": "koko",
+    "category": [
+      "top",
+      "shoes"
+    ],
+    "description": "구름위의 공기를 느끼게 해주는 럭셔리 하이힐\n금도금",
+    "stock": {
+      "250": 2,
+      "gold": 20
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": true,
+    "salePercent": 30,
+    "freeDelivery": true,
+    "kind": "shoes",
+    "createdAt": "2024-06-19T07:53:58.777Z",
+    "updatedAt": "2024-06-29T05:06:24.225Z",
+    "__v": 0
+  },
+  {
+    "_id": "6654240e3d81f02f29d66a36",
+    "sku": "sku0015",
+    "name": "프레이 에지 버뮤다 쇼츠",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa6%2F21%2Fa621f64c7ae17ded845a347dadf9b72c53af5cec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "price": 40000,
+    "salePrice": 20000,
+    "brand": "",
+    "category": [
+      "pants"
+    ],
+    "description": "코튼 트윌 소재의 루즈핏 5부 반바지. 레귤러 웨이스트. 밑위가 긴 디자인. 지퍼와 버튼 클로징. 앞뒷면 포켓. 올이 풀린 듯한 포켓 입구와 아랫단.",
+    "stock": {
+      "s": 8,
+      "m": 26,
+      "l": 20
+    },
+    "status": null,
+    "isDeleted": false,
+    "soldCount": 5,
+    "onePlus": false,
+    "salePercent": 50,
+    "freeDelivery": true,
+    "kind": "home",
+    "createdAt": "2024-05-27T06:11:26.887Z",
+    "updatedAt": "2024-06-30T13:12:39.941Z",
+    "__v": 0
+  },
+  {
+    "_id": "6654240e3d81f02f29d66a35",
+    "sku": "sku0014",
+    "name": "미디 스커트",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fae%2Fde%2Faede7b99fbd6228ab20f0879374842bd9310ee1a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "price": 34900,
+    "salePrice": 0,
+    "brand": "hm",
+    "category": [
+      "skirt"
+    ],
+    "description": "우븐 소재의 하이웨이스트 미디 원피스. 신축성 허릿단.",
+    "stock": {
+      "s": 34,
+      "m": 28,
+      "l": 20
+    },
+    "status": null,
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "clothes",
+    "createdAt": "2024-05-27T06:11:26.886Z",
+    "updatedAt": "2024-06-04T03:02:35.632Z",
+    "__v": 0
+  },
+  {
+    "_id": "665697036deab5519a841c1c",
+    "sku": "sku0031",
+    "name": "cat",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716950777/markmii0owq6rxceyxg6.png",
+    "price": 23340,
+    "salePrice": 0,
+    "brand": "동물농장",
+    "category": [
+      "animal"
+    ],
+    "description": "냐옹.. meo meo ",
+    "stock": {
+      "live": 56,
+      "dead": 40
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "animal",
+    "createdAt": "2024-05-29T02:46:27.336Z",
+    "updatedAt": "2024-05-30T05:02:47.359Z",
+    "__v": 0
+  },
+  {
+    "_id": "6654469b8dc4269f917b3380",
+    "sku": "sku0009",
+    "name": "버터플라이 슬리브 탑",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F68%2F8d%2F688de7d317c0645483b547d7721775353b3af2ee.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "price": 43000,
+    "salePrice": 0,
+    "brand": "hm",
+    "category": [
+      "top"
+    ],
+    "description": "부드러운 코튼 저지 소재의 라운드넥 탑. 버터플라이 소매.",
+    "stock": {
+      "s": 29,
+      "m": 70,
+      "l": 44
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 12,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "clothes",
+    "createdAt": "2024-05-27T08:38:52.044Z",
+    "updatedAt": "2024-06-20T04:26:48.758Z",
+    "__v": 0
+  },
+  {
+    "_id": "6655841e1e9fc1dfb5de4991",
+    "sku": "sku0020",
+    "name": "한우",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716880387/wmxddmsrdvfa7wgqdhrg.png",
+    "price": 20,
+    "salePrice": 0,
+    "brand": "한한우",
+    "category": [
+      "food"
+    ],
+    "description": "음메~~~ 미원에 저 한마리 들어간데요",
+    "stock": {
+      "dead": 34
+    },
+    "status": "active",
+    "isDeleted": true,
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
+    "kind": "animal",
+    "createdAt": "2024-05-28T07:13:34.343Z",
+    "updatedAt": "2024-06-29T05:15:19.404Z",
     "__v": 0
   },
   {
@@ -742,9 +805,12 @@
     "name": "nodejs 강의",
     "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717579251/uotn8fd9rnnmvc6gqbpe.jpg",
     "price": 120000,
+    "salePrice": 84000,
+    "brand": "코알누(C)",
     "category": [
       "강의",
-      "must have"
+      "must have",
+      "etc"
     ],
     "description": "아는 사람은 다 아는 코딩알려주는 누나님의 노드제이에스 강의",
     "stock": {
@@ -752,138 +818,176 @@
     },
     "status": "active",
     "isDeleted": false,
-    "createdAt": "2024-06-05T09:21:42.347Z",
-    "updatedAt": "2024-06-24T07:28:11.163Z",
-    "__v": 0,
-    "brand": "코알누(C)",
+    "soldCount": 85,
+    "onePlus": true,
+    "salePercent": 30,
     "freeDelivery": false,
     "kind": "etc",
-    "onePlus": false,
-    "salePercent": 0,
-    "salePrice": 0,
-    "soldCount": 0
-  },
-  {
-    "_id": "66610a1d8c5328ea84f0c96f",
-    "sku": "sku2001",
-    "name": "벨티드 셔츠 드레스",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717635595/nl1vkalzxxsxucleptyx.webp",
-    "price": 34999,
-    "category": [
-      "dress"
-    ],
-    "description": "test하려 와서 만든 품목",
-    "stock": {
-      "s": 29,
-      "m": 3
-    },
-    "status": "active",
-    "isDeleted": true,
-    "brand": "hm",
-    "kind": "clothes",
-    "createdAt": "2024-06-06T01:00:13.338Z",
-    "updatedAt": "2024-06-06T15:35:47.076Z",
+    "createdAt": "2024-06-05T09:21:42.347Z",
+    "updatedAt": "2024-06-29T05:12:57.479Z",
     "__v": 0
   },
   {
-    "_id": "6661cf0c8c5328ea84f0caf8",
-    "sku": "sku2002",
-    "name": "아무것",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1717686023/qozy1ujvzimbsedwcwbx.png",
-    "price": 1,
+    "_id": "66568ec76deab5519a841b5f",
+    "sku": "sku0023",
+    "name": "블루 탑 블루 스커트 세트",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1716948665/obxg4sbmuqw8erijlcwg.png",
+    "price": 240,
+    "salePrice": 0,
+    "brand": "핑크라인",
     "category": [
-      "top"
+      "top",
+      "dress"
     ],
-    "description": "아무것 테스트",
+    "description": "사이즈가 작게 나옵니다.",
     "stock": {
-      "s": 1
+      "m": 32
     },
     "status": "active",
     "isDeleted": false,
-    "brand": "hm",
+    "soldCount": 0,
+    "onePlus": false,
+    "salePercent": 0,
+    "freeDelivery": false,
     "kind": "clothes",
-    "createdAt": "2024-06-06T15:00:28.212Z",
-    "updatedAt": "2024-06-06T15:00:48.655Z",
+    "createdAt": "2024-05-29T02:11:19.897Z",
+    "updatedAt": "2024-06-24T07:26:26.379Z",
     "__v": 0
   },
   {
     "_id": "66728838631b7cc6f1cee2e2",
     "sku": "sku0100",
-    "name": "폐",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1718781967/jjaixg7vxwxldnhnob8h.png",
-    "price": 10,
-    "salePrice": 0,
+    "name": "형님표 금목걸이",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1719637162/mmgfcjg0agc06a1tcvh8.webp",
+    "price": 100000,
+    "salePrice": 70000,
     "brand": "노브랜드",
     "category": [
+      "necklace"
     ],
-    "description": "테스트 자료",
+    "description": "형님들만 소화 가능한 쇠사슬 금목걸이",
     "stock": {
       "only One Choice": 5
     },
     "status": "active",
     "isDeleted": false,
     "soldCount": 0,
+    "onePlus": true,
+    "salePercent": 30,
+    "freeDelivery": false,
+    "kind": "jewelry",
+    "createdAt": "2024-06-19T07:26:48.017Z",
+    "updatedAt": "2024-06-29T05:00:14.613Z",
+    "__v": 0
+  },
+  {
+    "_id": "6654511fc454f7966b845a1e",
+    "sku": "sku0019",
+    "name": "버튼 디테일 울 재킷",
+    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F79%2F75%2F797554989d373ceba26bc076c099f742c1f65d0b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    "price": 34000,
+    "salePrice": 0,
+    "brand": "hm",
+    "category": [
+      "jacket"
+    ],
+    "description": "노치트 라펠이 있는 울 트윌 소재의 싱글 브레스티드 재킷. 어깨 앞면 솔기. 라펠과 앞면에 버튼홀이 있음. 커버드 커프 링크로 다양한 스타일 연출 가능. 오버사이즈 실루엣. 드롭 숄더. 소맷단과 뒷트임 부분에 버튼이 있음. 가슴 웰트포켓, 앞면 플랩포켓. 내부 웰트포켓 2개 중 1개에 버튼이 있음. 앞면이 조금 더 긴 디자인. 디자이너의 로고가 새겨진 버튼 사용. 한쪽 소맷단에 디자이너의 로고 라벨이 부착됨. 안감 부착.",
+    "stock": {
+      "s": 48,
+      "m": 39
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 0,
     "onePlus": false,
     "salePercent": 0,
     "freeDelivery": false,
-    "kind": "etc",
-    "totalPurchase": 0,
-    "createdAt": "2024-06-19T07:26:48.017Z",
-    "updatedAt": "2024-06-19T07:26:48.017Z",
+    "kind": "clothes",
+    "createdAt": "2024-05-27T09:23:43.512Z",
+    "updatedAt": "2024-06-20T07:38:23.409Z",
     "__v": 0
   },
   {
-    "_id": "66728e968a7e2f4b7eabd03c",
-    "sku": "sku012",
-    "name": "345",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1718783607/xdzw1nncuxgtdzihotwi.jpg",
-    "price": 34550,
-    "salePrice": 0,
-    "brand": "koko",
+    "_id": "6654469b8dc4269f917b337b",
+    "sku": "sku0004",
+    "name": "텍스처 니트 랩스커트",
+    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F8f%2F8e%2F8f8ed9d7122b7e40065acbd8031dedd15ce4f2ab.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    "price": 35000,
+    "salePrice": 29750,
+    "brand": "hm",
     "category": [
-      "top"
+      "skirt"
     ],
-    "description": "234",
+    "description": "텍스처가 있는 니트 소재의 미디 스커트. 허리 뒷면에 밴딩이 내장됨. 랩스타일로 고정된 앞면에 플리츠를 잡아 가벼운 드레이핑 효과를 준 디자인.",
     "stock": {
-      "silver": 2,
-      "gold": 20
+      "m": 49,
+      "xl": 37
+    },
+    "status": "active",
+    "isDeleted": false,
+    "soldCount": 56,
+    "onePlus": false,
+    "salePercent": 15,
+    "freeDelivery": false,
+    "kind": "clothes",
+    "createdAt": "2024-05-27T08:38:52.043Z",
+    "updatedAt": "2024-06-29T05:16:30.519Z",
+    "__v": 0
+  },
+  {
+    "_id": "6654469b8dc4269f917b337e",
+    "sku": "sku0007",
+    "name": "아쿠아 샌들",
+    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb0%2F65%2Fb0655ed11483e4ba08be5d700db4edc6e1d76e05.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    "price": 12000,
+    "salePrice": 8400,
+    "brand": "hm",
+    "category": [
+      "sendal",
+      "shoes"
+    ],
+    "description": "그로그랭과 스쿠버 수트 소재가 믹스된 샌들. 프린트가 있는 그로그랭 스트랩. 테이프 클로저로 핏 조절 가능한 발등 스트랩과 발목 스트랩. 바닥면에 홈이 파인 입체적인 밑창. 밑창 높이 2.5cm.",
+    "stock": {
+      "240": 70,
+      "260": 42,
+      "s": 28
     },
     "status": "active",
     "isDeleted": false,
     "soldCount": 0,
     "onePlus": true,
-    "salePercent": 15,
-    "freeDelivery": false,
-    "kind": "jewelry",
-    "totalPurchase": 0,
-    "createdAt": "2024-06-19T07:53:58.777Z",
-    "updatedAt": "2024-06-19T07:53:58.777Z",
+    "salePercent": 30,
+    "freeDelivery": true,
+    "kind": "shoes",
+    "createdAt": "2024-05-27T08:38:52.044Z",
+    "updatedAt": "2024-06-29T13:41:22.543Z",
     "__v": 0
   },
   {
-    "_id": "6672910065562d5275064c9c",
-    "sku": "sku014",
-    "name": "6787",
-    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1718784233/wzgffgktycswjkweyp50.png",
-    "price": 5660,
-    "salePrice": 4811,
-    "brand": "CJ",
+    "_id": "66800356d6ac000559826b8b",
+    "sku": "sku2003",
+    "name": "소향 귀걸이",
+    "image": "https://res.cloudinary.com/dscla3iqu/image/upload/v1719665469/u56t8yxkeke3pjle91dp.jpg",
+    "price": 200000,
+    "salePrice": 170000,
+    "brand": "LG",
     "category": [
-      "top"
+      "earring"
     ],
-    "description": "3432432",
+    "description": "소향 -You raise me에서 직접 착용한 귀걸이",
     "stock": {
-      "silver": 23
+      "purl": 23,
+      "metal": 23
     },
     "status": "active",
     "isDeleted": false,
     "soldCount": 0,
-    "onePlus": true,
+    "onePlus": false,
     "salePercent": 15,
-    "freeDelivery": false,
+    "freeDelivery": true,
     "kind": "jewelry",
-    "createdAt": "2024-06-19T08:04:16.831Z",
-    "updatedAt": "2024-06-19T08:42:19.185Z",
+    "createdAt": "2024-06-29T12:51:34.826Z",
+    "updatedAt": "2024-06-29T12:51:34.826Z",
     "__v": 0
   }
 ]

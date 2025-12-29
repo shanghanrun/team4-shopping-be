@@ -24,7 +24,7 @@ const userSchema = Schema({
 	reviewIds:{type:Array, default:[]},
 	inquiryIds:{type:Array, default:[]},// 문의글
 	replyIds:{type:Array, default:[]},// 댓글들
-	replyChecked:{type:Boolean, default:false}
+	replyChecked:{type:Boolean, default:true}
 },{timestamps:true})
 
 userSchema.methods.toJSON =function(){
